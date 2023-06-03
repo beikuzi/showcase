@@ -1,0 +1,29 @@
+4	技能树	电子类	数学类	算法类	软件类	语法类
+
+6	电子类	电路	模电	数电	电力电子	电拖	自动控制、运动控制、现代控制	
+2	嵌入式	模电	数电
+4	嵌入式	汇编语言	操作系统原理	设备驱动程序	通信协议    plc
+
+4	算法类	AI	acm
+4	acm	基础算法	图论	数据结构	数学
+4	图论	最短路	最小生成树	网络流	并查集
+3	dijk	dijk实际是spfa的贪心堆改良
+4	最短路	spfa	dijk	floyd			
+4	网络流	EK	dinic	ISAP	HAPP
+4	基础算法	贪心	dp		
+4	最小生成树	krus	prim		
+1	dijk	prim			
+4	并查集	krus			
+
+
+4	数学类	复变	微分方程	概率论	矩阵	傅里叶变换	拉氏变换与传递函数	matlab
+4	复变	基础定义	解析函数	复变函数积分	解析函数级数表示	傅叶变换和拉氏变换
+
+
+4	软件类	绘画	bot	声音	视觉
+4	绘画	扩散模型	blender
+4	声音	vocaloid	VITS
+4	bot	qq机器人	chatgpt
+4	视觉	opencv	slam
+
+4	语法类	github	linux	c++	java	python	ros	数据库	网络技术

@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+    
+    <node pkg="gazebo_ros" type="spawn_model" name="model1" args="-urdf -file $(find formation)/urdf/1.urdf -model carA -x 0 -y 0 -z 0"/>
+    <node pkg="gazebo_ros" type="spawn_model" name="model2" args="-urdf -file $(find formation)/urdf/2.urdf -model carB -x 1 -y 1 -z 0"/>
+    <node pkg="gazebo_ros" type="spawn_model" name="model3" args="-urdf -file $(find formation)/urdf/3.urdf -model carC -x -1 -y -1 -z 0"/>
+
+</launch>

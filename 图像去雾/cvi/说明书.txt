@@ -1,0 +1,1 @@
+打开noFog.prj后，载入nivision.lfp，读入图片后可以同时使用两种方法进行图像去雾

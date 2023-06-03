@@ -1,0 +1,107 @@
+digraph Example{
+graph [bgcolor="pink"]
+subgraph cluster_1{
+	color="blue"
+	1 3 5
+}
+subgraph cluster_4{
+	color="blue"
+	4 7 9 11
+}
+subgraph cluster_10{
+	color="blue"
+	10 13 15
+}
+subgraph cluster_2{
+	color="blue"
+	2 17 19
+}
+subgraph cluster_18{
+	color="blue"
+	18 21 23 25 27
+}
+subgraph cluster_16{
+	color="blue"
+	16 29 31 33 35
+}
+subgraph cluster_28{
+	color="blue"
+	28 37 39 41 43 45 47 49
+}
+subgraph cluster_30{
+	color="blue"
+	30 51 53 55
+}
+subgraph cluster_32{
+	color="blue"
+	32 57 59 61
+}
+subgraph cluster_34{
+	color="blue"
+	34 63 65 67 69 71
+}
+1 [label="windows",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+1 -> {5,3}[style="solid",color="red"]
+5 -> {4}[style="solid",color="red"]
+3 -> {2}[style="solid",color="red"]
+4 -> {11,9,7}[style="solid",color="red"]
+2 -> {19,17}[style="solid",color="red"]
+11 -> {10}[style="solid",color="red"]
+19 -> {18}[style="solid",color="red"]
+17 -> {16}[style="solid",color="red"]
+10 -> {15,13}[style="solid",color="red"]
+18 -> {27,25,23,21}[style="solid",color="red"]
+16 -> {35,33,31,29}[style="solid",color="red"]
+35 -> {34}[style="solid",color="red"]
+33 -> {32}[style="solid",color="red"]
+31 -> {30}[style="solid",color="red"]
+29 -> {28}[style="solid",color="red"]
+34 -> {71,69,67,65,63}[style="solid",color="red"]
+32 -> {61,59,57}[style="solid",color="red"]
+30 -> {55,53,51}[style="solid",color="red"]
+28 -> {49,47,45,43,41,39,37}[style="solid",color="red"]
+2 [label="D盘",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+3 [label="D盘",shape="box",style="filled",fillcolor="#66CCff"]
+4 [label="E盘",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+5 [label="E盘",shape="box",style="filled",fillcolor="#66CCff"]
+7 [label="github仓库",shape="box",style="filled",fillcolor="#66CCff"]
+9 [label="百度云下载",shape="box",style="filled",fillcolor="#66CCff"]
+10 [label="消息记录",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+11 [label="消息记录",shape="box",style="filled",fillcolor="#66CCff"]
+13 [label="网易云音乐",shape="box",style="filled",fillcolor="#66CCff"]
+15 [label="qq/微信消息记录",shape="box",style="filled",fillcolor="#66CCff"]
+16 [label="install",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+17 [label="install",shape="box",style="filled",fillcolor="#66CCff"]
+18 [label="env",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+19 [label="env",shape="box",style="filled",fillcolor="#66CCff"]
+21 [label="curl",shape="box",style="filled",fillcolor="#66CCff"]
+23 [label="mingw",shape="box",style="filled",fillcolor="#66CCff"]
+25 [label="Graphviz",shape="box",style="filled",fillcolor="#66CCff"]
+27 [label="json",shape="box",style="filled",fillcolor="#66CCff"]
+28 [label="tool",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+29 [label="tool",shape="box",style="filled",fillcolor="#66CCff"]
+30 [label="play",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+31 [label="play",shape="box",style="filled",fillcolor="#66CCff"]
+32 [label="msg",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+33 [label="msg",shape="box",style="filled",fillcolor="#66CCff"]
+34 [label="study",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+35 [label="study",shape="box",style="filled",fillcolor="#66CCff"]
+37 [label="flash",shape="box",style="filled",fillcolor="#66CCff"]
+39 [label="搜狗",shape="box",style="filled",fillcolor="#66CCff"]
+41 [label="winrar",shape="box",style="filled",fillcolor="#66CCff"]
+43 [label="clash",shape="box",style="filled",fillcolor="#66CCff"]
+45 [label="鲁大师",shape="box",style="filled",fillcolor="#66CCff"]
+47 [label="github",shape="box",style="filled",fillcolor="#66CCff"]
+49 [label="腾讯会议",shape="box",style="filled",fillcolor="#66CCff"]
+51 [label="ai绘画",shape="box",style="filled",fillcolor="#66CCff"]
+53 [label="steam",shape="box",style="filled",fillcolor="#66CCff"]
+55 [label="MMD",shape="box",style="filled",fillcolor="#66CCff"]
+57 [label="qq/微信",shape="box",style="filled",fillcolor="#66CCff"]
+59 [label="百度云",shape="box",style="filled",fillcolor="#66CCff"]
+61 [label="网易云",shape="box",style="filled",fillcolor="#66CCff"]
+63 [label="plc西门子",shape="box",style="filled",fillcolor="#66CCff"]
+65 [label="c++",shape="box",style="filled",fillcolor="#66CCff"]
+67 [label="vscode",shape="box",style="filled",fillcolor="#66CCff"]
+69 [label="matlab",shape="box",style="filled",fillcolor="#66CCff"]
+71 [label="python",shape="box",style="filled",fillcolor="#66CCff"]
+}

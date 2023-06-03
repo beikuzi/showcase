@@ -1,0 +1,515 @@
+digraph Example{
+graph [bgcolor="pink"]
+subgraph cluster_1{
+	color="blue"
+	1 3 5 7 9 11
+}
+subgraph cluster_10{
+	color="blue"
+	10 14 16 18 20 22 24 26
+}
+subgraph cluster_4{
+	color="blue"
+	4 28 30
+}
+subgraph cluster_27{
+	color="blue"
+	27 32 34 36
+}
+subgraph cluster_35{
+	color="blue"
+	35 38 40 42
+}
+subgraph cluster_37{
+	color="blue"
+	37 44 46 48 50
+}
+subgraph cluster_33{
+	color="blue"
+	33 52 54 56 58 60 62
+}
+subgraph cluster_61{
+	color="blue"
+	61 64 66 68 70
+}
+subgraph cluster_39{
+	color="blue"
+	39 72 74
+}
+subgraph cluster_41{
+	color="blue"
+	41 76 78 80
+}
+subgraph cluster_29{
+	color="blue"
+	29 82 84
+}
+subgraph cluster_81{
+	color="blue"
+	81 85 87
+}
+subgraph cluster_83{
+	color="blue"
+	83 89 91 93
+}
+subgraph cluster_86{
+	color="blue"
+	86 95 97 99
+}
+subgraph cluster_31{
+	color="blue"
+	31 101 103 105
+}
+subgraph cluster_100{
+	color="blue"
+	100 107 109 111 113
+}
+subgraph cluster_102{
+	color="blue"
+	102 115 117 119
+}
+subgraph cluster_104{
+	color="blue"
+	104 121 123 125 127
+}
+subgraph cluster_2{
+	color="blue"
+	2 131 133
+}
+subgraph cluster_132{
+	color="blue"
+	132 135 137 139 141 143 145
+}
+subgraph cluster_134{
+	color="blue"
+	134 147 149 151 153 155 157
+}
+subgraph cluster_154{
+	color="blue"
+	154 159 161 163
+}
+subgraph cluster_168{
+	color="blue"
+	168 170 172 174 176
+}
+subgraph cluster_169{
+	color="blue"
+	169 178 180
+}
+subgraph cluster_171{
+	color="blue"
+	171 182 184 186
+}
+subgraph cluster_173{
+	color="blue"
+	173 188 190 192
+}
+subgraph cluster_189{
+	color="blue"
+	189 194 196 198
+}
+subgraph cluster_187{
+	color="blue"
+	187 200 202 204 206
+}
+subgraph cluster_199{
+	color="blue"
+	199 208 210 212 214
+}
+subgraph cluster_201{
+	color="blue"
+	201 216 218 220
+}
+subgraph cluster_203{
+	color="blue"
+	203 222 224 226 228 230 232
+}
+subgraph cluster_175{
+	color="blue"
+	175 244 246 248 250 252
+}
+subgraph cluster_245{
+	color="blue"
+	245 254 256 258 260 262 264
+}
+subgraph cluster_249{
+	color="blue"
+	249 280 282 284 286
+}
+subgraph cluster_251{
+	color="blue"
+	251 289 291 293
+}
+subgraph cluster_8{
+	color="blue"
+	8 296 298 300 301
+}
+subgraph cluster_295{
+	color="blue"
+	295 303 305 307 309
+}
+subgraph cluster_297{
+	color="blue"
+	297 311 313
+}
+1 [label="系统",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+1 -> {11,9,7,5,3}[style="solid",color="red"]
+1 -> {12}[style="dashed",color="ForestGreen",dir="none"]
+11 -> {10}[style="solid",color="red"]
+9 -> {8}[style="solid",color="red"]
+5 -> {4}[style="solid",color="red"]
+3 -> {2}[style="solid",color="red"]
+10 -> {26,24,22,20,18,16,14}[style="solid",color="red"]
+8 -> {301,300,298,296}[style="solid",color="red"]
+4 -> {30,28}[style="solid",color="red"]
+2 -> {133,131}[style="solid",color="red"]
+301 -> {168}[style="solid",color="red"]
+298 -> {297}[style="solid",color="red"]
+296 -> {295}[style="solid",color="red"]
+30 -> {29}[style="solid",color="red"]
+28 -> {27}[style="solid",color="red"]
+133 -> {132}[style="solid",color="red"]
+168 -> {176,174,172,170}[style="solid",color="red"]
+297 -> {313,311}[style="solid",color="red"]
+295 -> {309,307,305,303}[style="solid",color="red"]
+29 -> {84,82}[style="solid",color="red"]
+27 -> {36,34,32}[style="solid",color="red"]
+132 -> {145,143,141,139,137,135}[style="solid",color="red"]
+176 -> {175}[style="solid",color="red"]
+174 -> {173}[style="solid",color="red"]
+172 -> {171}[style="solid",color="red"]
+170 -> {169}[style="solid",color="red"]
+84 -> {83}[style="solid",color="red"]
+82 -> {81}[style="solid",color="red"]
+36 -> {35}[style="solid",color="red"]
+34 -> {33}[style="solid",color="red"]
+32 -> {31}[style="solid",color="red"]
+143 -> {142}[style="solid",color="red"]
+139 -> {138}[style="solid",color="red"]
+135 -> {134}[style="solid",color="red"]
+175 -> {252,250,248,246,244}[style="solid",color="red"]
+173 -> {192,190,188}[style="solid",color="red"]
+171 -> {186,184,182}[style="solid",color="red"]
+169 -> {180,178}[style="solid",color="red"]
+83 -> {93,91,89}[style="solid",color="red"]
+83 -> {128}[style="dashed",color="ForestGreen",dir="none"]
+81 -> {87,85}[style="solid",color="red"]
+35 -> {42,40,38}[style="solid",color="red"]
+33 -> {62,60,58,56,54,52}[style="solid",color="red"]
+31 -> {105,103,101}[style="solid",color="red"]
+142 -> {164}[style="dashed",color="ForestGreen",dir="none"]
+138 -> {167}[style="dashed",color="ForestGreen",dir="none"]
+134 -> {157,155,153,151,149,147}[style="solid",color="red"]
+252 -> {251}[style="solid",color="red"]
+250 -> {249}[style="solid",color="red"]
+248 -> {247}[style="solid",color="red"]
+246 -> {245}[style="solid",color="red"]
+192 -> {191}[style="solid",color="red"]
+190 -> {189}[style="solid",color="red"]
+188 -> {187}[style="solid",color="red"]
+87 -> {86}[style="solid",color="red"]
+85 -> {31}[style="solid",color="red"]
+42 -> {41}[style="solid",color="red"]
+40 -> {39}[style="solid",color="red"]
+38 -> {37}[style="solid",color="red"]
+62 -> {61}[style="solid",color="red"]
+105 -> {104}[style="solid",color="red"]
+103 -> {102}[style="solid",color="red"]
+101 -> {100}[style="solid",color="red"]
+155 -> {154}[style="solid",color="red"]
+251 -> {293,291,289}[style="solid",color="red"]
+249 -> {286,284,282,280}[style="solid",color="red"]
+249 -> {287}[style="dashed",color="ForestGreen",dir="none"]
+247 -> {267}[style="dashed",color="ForestGreen",dir="none"]
+245 -> {264,262,260,258,256,254}[style="solid",color="red"]
+191 -> {233}[style="dashed",color="ForestGreen",dir="none"]
+189 -> {198,196,194}[style="solid",color="red"]
+187 -> {206,204,202,200}[style="solid",color="red"]
+86 -> {99,97,95}[style="solid",color="red"]
+41 -> {80,78,76}[style="solid",color="red"]
+39 -> {74,72}[style="solid",color="red"]
+37 -> {50,48,46,44}[style="solid",color="red"]
+61 -> {70,68,66,64}[style="solid",color="red"]
+104 -> {127,125,123,121}[style="solid",color="red"]
+102 -> {119,117,115}[style="solid",color="red"]
+100 -> {113,111,109,107}[style="solid",color="red"]
+154 -> {163,161,159}[style="solid",color="red"]
+291 -> {290}[style="solid",color="red"]
+289 -> {288}[style="solid",color="red"]
+264 -> {263}[style="solid",color="red"]
+262 -> {261}[style="solid",color="red"]
+260 -> {259}[style="solid",color="red"]
+258 -> {257}[style="solid",color="red"]
+256 -> {255}[style="solid",color="red"]
+254 -> {253}[style="solid",color="red"]
+198 -> {197}[style="solid",color="red"]
+206 -> {205}[style="solid",color="red"]
+204 -> {203}[style="solid",color="red"]
+202 -> {201}[style="solid",color="red"]
+200 -> {199}[style="solid",color="red"]
+95 -> {94}[style="solid",color="red"]
+109 -> {108}[style="solid",color="red"]
+107 -> {106}[style="solid",color="red"]
+290 -> {294}[style="dashed",color="ForestGreen",dir="none"]
+288 -> {294}[style="dashed",color="ForestGreen",dir="none"]
+263 -> {266,265}[style="dashed",color="ForestGreen",dir="none"]
+261 -> {275,274}[style="dashed",color="ForestGreen",dir="none"]
+259 -> {271}[style="dashed",color="ForestGreen",dir="none"]
+257 -> {278,277,276}[style="dashed",color="ForestGreen",dir="none"]
+255 -> {273,272}[style="dashed",color="ForestGreen",dir="none"]
+253 -> {270,269,268}[style="dashed",color="ForestGreen",dir="none"]
+197 -> {242}[style="dashed",color="ForestGreen",dir="none"]
+205 -> {239}[style="dashed",color="ForestGreen",dir="none"]
+203 -> {232,230,228,226,224,222}[style="solid",color="red"]
+203 -> {236}[style="dashed",color="ForestGreen",dir="none"]
+201 -> {220,218,216}[style="solid",color="red"]
+199 -> {214,212,210,208}[style="solid",color="red"]
+94 -> {129}[style="dashed",color="ForestGreen",dir="none"]
+108 -> {166}[style="dashed",color="ForestGreen",dir="none"]
+106 -> {165}[style="dashed",color="ForestGreen",dir="none"]
+232 -> {231}[style="solid",color="red"]
+230 -> {229}[style="solid",color="red"]
+228 -> {227}[style="solid",color="red"]
+218 -> {217}[style="solid",color="red"]
+214 -> {213}[style="solid",color="red"]
+212 -> {211}[style="solid",color="red"]
+231 -> {241}[style="dashed",color="ForestGreen",dir="none"]
+229 -> {240}[style="dashed",color="ForestGreen",dir="none"]
+227 -> {234}[style="dashed",color="ForestGreen",dir="none"]
+217 -> {237}[style="dashed",color="ForestGreen",dir="none"]
+213 -> {238}[style="dashed",color="ForestGreen",dir="none"]
+211 -> {235}[style="dashed",color="ForestGreen",dir="none"]
+2 [label="状态",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+3 [label="状态",shape="box",style="filled",fillcolor="#66CCff"]
+4 [label="任务",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+5 [label="任务",shape="box",style="filled",fillcolor="#66CCff"]
+7 [label="捏人+换装",shape="box",style="filled",fillcolor="#66CCff"]
+8 [label="交互",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+9 [label="交互",shape="box",style="filled",fillcolor="#66CCff"]
+10 [label="UI界面",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+11 [label="UI界面",shape="box",style="filled",fillcolor="#66CCff"]
+12 [label="自己决定需要启动哪些模块，防止卡死，以及看是否能独立出来",shape="box",style="filled",fillcolor="#45b97c"]
+14 [label="存读档",shape="box",style="filled",fillcolor="#66CCff"]
+16 [label="auto(alt)/skip(ctrl)",shape="box",style="filled",fillcolor="#66CCff"]
+18 [label="隐藏(shift)",shape="box",style="filled",fillcolor="#66CCff"]
+20 [label="前进(space)",shape="box",style="filled",fillcolor="#66CCff"]
+22 [label="历史（鼠标上下滚轮）",shape="box",style="filled",fillcolor="#66CCff"]
+24 [label="鼠标右键返回",shape="box",style="filled",fillcolor="#66CCff"]
+26 [label="剧情树",shape="box",style="filled",fillcolor="#66CCff"]
+27 [label="主控任务",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+28 [label="主控任务",shape="box",style="filled",fillcolor="#66CCff"]
+29 [label="少女任务",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+30 [label="少女任务",shape="box",style="filled",fillcolor="#66CCff"]
+31 [label="建筑",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+32 [label="建筑",shape="box",style="filled",fillcolor="#66CCff"]
+33 [label="网站建立",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+34 [label="网站建立",shape="box",style="filled",fillcolor="#66CCff"]
+35 [label="知识体系",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+36 [label="知识体系",shape="box",style="filled",fillcolor="#66CCff"]
+37 [label="主播类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+38 [label="主播类",shape="box",style="filled",fillcolor="#66CCff"]
+39 [label="基础类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+40 [label="基础类",shape="box",style="filled",fillcolor="#66CCff"]
+41 [label="进阶类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+42 [label="进阶类",shape="box",style="filled",fillcolor="#66CCff"]
+44 [label="语音合成",shape="box",style="filled",fillcolor="#66CCff"]
+46 [label="动捕学习",shape="box",style="filled",fillcolor="#66CCff"]
+48 [label="皮套制作",shape="box",style="filled",fillcolor="#66CCff"]
+50 [label="视频制作",shape="box",style="filled",fillcolor="#66CCff"]
+52 [label="博客制作",shape="box",style="filled",fillcolor="#66CCff"]
+54 [label="公众号建立",shape="box",style="filled",fillcolor="#66CCff"]
+56 [label="资金支持",shape="box",style="filled",fillcolor="#66CCff"]
+58 [label="信仰推荐",shape="box",style="filled",fillcolor="#66CCff"]
+60 [label="个人资源",shape="box",style="filled",fillcolor="#66CCff"]
+61 [label="素材收集",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+62 [label="素材收集",shape="box",style="filled",fillcolor="#66CCff"]
+64 [label="盖——亚——",shape="box",style="filled",fillcolor="#66CCff"]
+66 [label="你是一个一个",shape="box",style="filled",fillcolor="#66CCff"]
+68 [label="鸡汤来咯",shape="box",style="filled",fillcolor="#66CCff"]
+70 [label="喝啊，为什么不喝",shape="box",style="filled",fillcolor="#66CCff"]
+72 [label="基础语法",shape="box",style="filled",fillcolor="#66CCff"]
+74 [label="算法",shape="box",style="filled",fillcolor="#66CCff"]
+76 [label="ai能力",shape="box",style="filled",fillcolor="#66CCff"]
+78 [label="游戏设计",shape="box",style="filled",fillcolor="#66CCff"]
+80 [label="嵌入式设计",shape="box",style="filled",fillcolor="#66CCff"]
+81 [label="一次性",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+82 [label="一次性",shape="box",style="filled",fillcolor="#66CCff"]
+83 [label="日常",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+84 [label="日常",shape="box",style="filled",fillcolor="#66CCff"]
+85 [label="建筑",shape="box",style="filled",fillcolor="#66CCff"]
+86 [label="隐蔽上限强化",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+87 [label="隐蔽上限强化",shape="box",style="filled",fillcolor="#66CCff"]
+89 [label="打扫（月底消毒+检查）",shape="box",style="filled",fillcolor="#66CCff"]
+91 [label="体能",shape="box",style="filled",fillcolor="#66CCff"]
+93 [label="做饭",shape="box",style="filled",fillcolor="#66CCff"]
+94 [label="假身份制造",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+95 [label="假身份制造",shape="box",style="filled",fillcolor="#66CCff"]
+97 [label="账号随机生成机",shape="box",style="filled",fillcolor="#66CCff"]
+99 [label="ip更换与外网能力",shape="box",style="filled",fillcolor="#66CCff"]
+100 [label="属性建筑",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+101 [label="属性建筑",shape="box",style="filled",fillcolor="#66CCff"]
+102 [label="功能建筑",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+103 [label="功能建筑",shape="box",style="filled",fillcolor="#66CCff"]
+104 [label="剧情建筑",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+105 [label="剧情建筑",shape="box",style="filled",fillcolor="#66CCff"]
+106 [label="录音棚",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+107 [label="录音棚",shape="box",style="filled",fillcolor="#66CCff"]
+108 [label="跳舞机",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+109 [label="跳舞机",shape="box",style="filled",fillcolor="#66CCff"]
+111 [label="厨房",shape="box",style="filled",fillcolor="#66CCff"]
+113 [label="运动场",shape="box",style="filled",fillcolor="#66CCff"]
+115 [label="自己房间",shape="box",style="filled",fillcolor="#66CCff"]
+117 [label="少女房间",shape="box",style="filled",fillcolor="#66CCff"]
+119 [label="外出点",shape="box",style="filled",fillcolor="#66CCff"]
+121 [label="客厅",shape="box",style="filled",fillcolor="#66CCff"]
+123 [label="密室",shape="box",style="filled",fillcolor="#66CCff"]
+125 [label="浴室",shape="box",style="filled",fillcolor="#66CCff"]
+127 [label="泳池",shape="box",style="filled",fillcolor="#66CCff"]
+128 [label="不断解锁让少女可以做的事情，让她们提升属性以及增加好感（要支付point）",shape="box",style="filled",fillcolor="#45b97c"]
+129 [label="会不小心变成这个人设吗？",shape="box",style="filled",fillcolor="#45b97c"]
+131 [label="主控状态",shape="box",style="filled",fillcolor="#66CCff"]
+132 [label="少女状态",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+133 [label="少女状态",shape="box",style="filled",fillcolor="#66CCff"]
+134 [label="少女能力",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+135 [label="少女能力",shape="box",style="filled",fillcolor="#66CCff"]
+137 [label="好感（未转化部分是临时好感）",shape="box",style="filled",fillcolor="#66CCff"]
+138 [label="隐蔽",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+139 [label="隐蔽",shape="box",style="filled",fillcolor="#66CCff"]
+141 [label="欲望（逆推）",shape="box",style="filled",fillcolor="#66CCff"]
+142 [label="服装设定",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+143 [label="服装设定",shape="box",style="filled",fillcolor="#66CCff"]
+145 [label="外观改变",shape="box",style="filled",fillcolor="#66CCff"]
+147 [label="歌声（ex：声优库）",shape="box",style="filled",fillcolor="#66CCff"]
+149 [label="跳舞（ex：动态捕捉）",shape="box",style="filled",fillcolor="#66CCff"]
+151 [label="画画",shape="box",style="filled",fillcolor="#66CCff"]
+153 [label="语言",shape="box",style="filled",fillcolor="#66CCff"]
+154 [label="游戏",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+155 [label="游戏",shape="box",style="filled",fillcolor="#66CCff"]
+157 [label="煮饭",shape="box",style="filled",fillcolor="#66CCff"]
+159 [label="音游",shape="box",style="filled",fillcolor="#66CCff"]
+161 [label="gal",shape="box",style="filled",fillcolor="#66CCff"]
+163 [label="moba",shape="box",style="filled",fillcolor="#66CCff"]
+164 [label="随机搭配+可以禁止某种搭配、指定日期星期装扮",shape="box",style="filled",fillcolor="#45b97c"]
+165 [label="希望可以玩家改变角色声线",shape="box",style="filled",fillcolor="#45b97c"]
+166 [label="希望可以自己上传动作文件进行跳舞+mmd附带生成",shape="box",style="filled",fillcolor="#45b97c"]
+167 [label="过低会被开盒",shape="box",style="filled",fillcolor="#45b97c"]
+168 [label="ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+169 [label="袭击",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+170 [label="袭击",shape="box",style="filled",fillcolor="#66CCff"]
+171 [label="自慰",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+172 [label="自慰",shape="box",style="filled",fillcolor="#66CCff"]
+173 [label="特殊play",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+174 [label="特殊play",shape="box",style="filled",fillcolor="#66CCff"]
+175 [label="调情",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+176 [label="调情",shape="box",style="filled",fillcolor="#66CCff"]
+178 [label="主动（未醒来/未发现/被发现偷偷/被发现加入）",shape="box",style="filled",fillcolor="#66CCff"]
+180 [label="逆向（未醒来/醒来/三人）",shape="box",style="filled",fillcolor="#66CCff"]
+182 [label="单人（窥视/夜袭）",shape="box",style="filled",fillcolor="#66CCff"]
+184 [label="百合（窥视/夜袭）",shape="box",style="filled",fillcolor="#66CCff"]
+186 [label="逆向（窥视/夜袭/三人）",shape="box",style="filled",fillcolor="#66CCff"]
+187 [label="专属ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+188 [label="专属ero",shape="box",style="filled",fillcolor="#66CCff"]
+189 [label="零花钱请求",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+190 [label="零花钱请求",shape="box",style="filled",fillcolor="#66CCff"]
+191 [label="被送女装",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+192 [label="被送女装",shape="box",style="filled",fillcolor="#66CCff"]
+194 [label="写真集抵押（再进阶）",shape="box",style="filled",fillcolor="#66CCff"]
+196 [label="侍奉请求",shape="box",style="filled",fillcolor="#66CCff"]
+197 [label="录像play",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+198 [label="录像play",shape="box",style="filled",fillcolor="#66CCff"]
+199 [label="地点ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+200 [label="地点ero",shape="box",style="filled",fillcolor="#66CCff"]
+201 [label="密室ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+202 [label="密室ero",shape="box",style="filled",fillcolor="#66CCff"]
+203 [label="游戏ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+204 [label="游戏ero",shape="box",style="filled",fillcolor="#66CCff"]
+205 [label="绘画ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+206 [label="绘画ero",shape="box",style="filled",fillcolor="#66CCff"]
+208 [label="录音棚ero_配音",shape="box",style="filled",fillcolor="#66CCff"]
+210 [label="跳舞机ero_动捕",shape="box",style="filled",fillcolor="#66CCff"]
+211 [label="浴室ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+212 [label="浴室ero",shape="box",style="filled",fillcolor="#66CCff"]
+213 [label="运动ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+214 [label="运动ero",shape="box",style="filled",fillcolor="#66CCff"]
+216 [label="课堂play",shape="box",style="filled",fillcolor="#66CCff"]
+217 [label="拘束play",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+218 [label="拘束play",shape="box",style="filled",fillcolor="#66CCff"]
+220 [label="舞台play",shape="box",style="filled",fillcolor="#66CCff"]
+222 [label="边玩黄油边学习实践",shape="box",style="filled",fillcolor="#66CCff"]
+224 [label="利用ero操作两边都赢",shape="box",style="filled",fillcolor="#66CCff"]
+226 [label="大逃杀ero游戏",shape="box",style="filled",fillcolor="#66CCff"]
+227 [label="拯救游戏",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+228 [label="拯救游戏",shape="box",style="filled",fillcolor="#66CCff"]
+229 [label="猜字ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+230 [label="猜字ero",shape="box",style="filled",fillcolor="#66CCff"]
+231 [label="卡牌ero",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+232 [label="卡牌ero",shape="box",style="filled",fillcolor="#66CCff"]
+233 [label="你觉得我像司马懿那样畏首畏尾吗，看我今晚不把你给……（女装上阵）",shape="box",style="filled",fillcolor="#45b97c"]
+234 [label="两个人ero一个人推关，踩到不同的机关会有不同的惩罚，可以伪装成宝箱怪",shape="box",style="filled",fillcolor="#45b97c"]
+235 [label="镜面、回声、偷窥",shape="box",style="filled",fillcolor="#45b97c"]
+236 [label="赢了有奖励，输了有惩罚。可以关了声音让少女直播游戏画面(糟糕的画面",shape="box",style="filled",fillcolor="#45b97c"]
+237 [label="眼罩、手铐、脚环、绳子",shape="box",style="filled",fillcolor="#45b97c"]
+238 [label="1个仰卧起坐出入1次",shape="box",style="filled",fillcolor="#45b97c"]
+239 [label="在对决中存在镜子，然后一边ero一边对着镜子绘画（袭击成功越多，绘画越鬼畜）",shape="box",style="filled",fillcolor="#45b97c"]
+240 [label="AB相互百合，主控在B背后写字，然后B如果能识别出来，就A受惩罚，否则就B受惩罚",shape="box",style="filled",fillcolor="#45b97c"]
+241 [label="两个人各选5张卡牌，放进去洗，抽到啥是啥（抽的人给另一个……）",shape="box",style="filled",fillcolor="#45b97c"]
+242 [label="一边ero一边录下自己欢快的表情，玩家操控录制角度",shape="box",style="filled",fillcolor="#45b97c"]
+244 [label="语音",shape="box",style="filled",fillcolor="#66CCff"]
+245 [label="动作",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+246 [label="动作",shape="box",style="filled",fillcolor="#66CCff"]
+247 [label="涂鸦",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+248 [label="涂鸦",shape="box",style="filled",fillcolor="#66CCff"]
+249 [label="亲吻",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+250 [label="亲吻",shape="box",style="filled",fillcolor="#66CCff"]
+251 [label="食物",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+252 [label="食物",shape="box",style="filled",fillcolor="#66CCff"]
+253 [label="结束动作",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+254 [label="结束动作",shape="box",style="filled",fillcolor="#66CCff"]
+255 [label="戴套",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+256 [label="戴套",shape="box",style="filled",fillcolor="#66CCff"]
+257 [label="逆推",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+258 [label="逆推",shape="box",style="filled",fillcolor="#66CCff"]
+259 [label="反击",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+260 [label="反击",shape="box",style="filled",fillcolor="#66CCff"]
+261 [label="惩罚",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+262 [label="惩罚",shape="box",style="filled",fillcolor="#66CCff"]
+263 [label="进击",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+264 [label="进击",shape="box",style="filled",fillcolor="#66CCff"]
+265 [label="求我的话，可以让你放进去……等，等一下啦……坏蛋",shape="box",style="filled",fillcolor="#45b97c"]
+266 [label="想要吗？快点央求我伸进去",shape="box",style="filled",fillcolor="#45b97c"]
+267 [label="一方结束后可以被对方身上画画，只能画一点对方就会说好痒打断",shape="box",style="filled",fillcolor="#45b97c"]
+268 [label="躺在手臂上，并且抚摸肌肉",shape="box",style="filled",fillcolor="#45b97c"]
+269 [label="抱住余温",shape="box",style="filled",fillcolor="#45b97c"]
+270 [label="你叫起来的声音好涩啊，我好喜欢",shape="box",style="filled",fillcolor="#45b97c"]
+271 [label="等对方乘骑快到顶峰的时候，突然将对方压倒然后扣住进行冲刺",shape="box",style="filled",fillcolor="#45b97c"]
+272 [label="主控握住套，对方用嘴撕开，用嘴咬住来戴",shape="box",style="filled",fillcolor="#45b97c"]
+273 [label="双手握住，一边说奉承的话一边手指沿着根推上去",shape="box",style="filled",fillcolor="#45b97c"]
+274 [label="后背：边拍屁股一边深入",shape="box",style="filled",fillcolor="#45b97c"]
+275 [label="正位：边挠脚板底边深入",shape="box",style="filled",fillcolor="#45b97c"]
+276 [label="用手握住，然后抓住靠近来给自己0721",shape="box",style="filled",fillcolor="#45b97c"]
+277 [label="乖乖蹲坐着，同时伸手来解开裤带",shape="box",style="filled",fillcolor="#45b97c"]
+278 [label="被抱在怀里，然后侧身把液体打到地面上",shape="box",style="filled",fillcolor="#45b97c"]
+280 [label="额头",shape="box",style="filled",fillcolor="#66CCff"]
+282 [label="手",shape="box",style="filled",fillcolor="#66CCff"]
+284 [label="头发",shape="box",style="filled",fillcolor="#66CCff"]
+286 [label="舔手指",shape="box",style="filled",fillcolor="#66CCff"]
+287 [label="亲吻时可点节奏，点对可以顺手解一件",shape="box",style="filled",fillcolor="#45b97c"]
+288 [label="是否接过巧克力棒",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+289 [label="是否接过巧克力棒",shape="box",style="filled",fillcolor="#66CCff"]
+290 [label="是否主动",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+291 [label="是否主动",shape="box",style="filled",fillcolor="#66CCff"]
+293 [label="（也可以主动使用让对方亲)",shape="box",style="filled",fillcolor="#66CCff"]
+294 [label="根据选择产生4个分支，如果主动：是你自己亲上来的哦。",shape="box",style="filled",fillcolor="#45b97c"]
+295 [label="送礼",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+296 [label="送礼",shape="box",style="filled",fillcolor="#66CCff"]
+297 [label="拍照",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+298 [label="拍照",shape="box",style="filled",fillcolor="#66CCff"]
+300 [label="跟随",shape="box",style="filled",fillcolor="#66CCff"]
+301 [label="ero",shape="box",style="filled",fillcolor="#66CCff"]
+303 [label="抱枕(eroplay时可选)",shape="box",style="filled",fillcolor="#66CCff"]
+305 [label="服装",shape="box",style="filled",fillcolor="#66CCff"]
+307 [label="房间装饰",shape="box",style="filled",fillcolor="#66CCff"]
+309 [label="道具",shape="box",style="filled",fillcolor="#66CCff"]
+311 [label="静态指定（掀起裙子、ero动作）",shape="box",style="filled",fillcolor="#66CCff"]
+313 [label="视频制作（指定台词、ero动作）",shape="box",style="filled",fillcolor="#66CCff"]
+}

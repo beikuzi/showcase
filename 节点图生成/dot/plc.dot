@@ -1,0 +1,313 @@
+digraph Example{
+graph [bgcolor="pink"]
+subgraph cluster_1{
+	color="blue"
+	1 3 5 7 9 11
+}
+subgraph cluster_2{
+	color="blue"
+	2 12 14 16
+}
+subgraph cluster_2{
+	color="blue"
+	2 18 20 22 24 26 28 30
+}
+subgraph cluster_4{
+	color="blue"
+	4 32 34 36 38 40{rank=same;32;34;36;38;40;}
+
+}
+subgraph cluster_33{
+	color="blue"
+	33 42 44 46 48 50
+}
+subgraph cluster_35{
+	color="blue"
+	35 52 54
+}
+subgraph cluster_39{
+	color="blue"
+	39 56 58 60
+}
+subgraph cluster_41{
+	color="blue"
+	41 62 64 66 68 70
+}
+subgraph cluster_37{
+	color="blue"
+	37 73 75
+}
+subgraph cluster_6{
+	color="blue"
+	6 79 81 83
+}
+subgraph cluster_78{
+	color="blue"
+	78 85 87 89 91 93 95 97 99 101
+}
+subgraph cluster_80{
+	color="blue"
+	80 103 105
+}
+subgraph cluster_82{
+	color="blue"
+	82 107 109
+}
+subgraph cluster_8{
+	color="blue"
+	8 111 113 115 117 119
+}
+subgraph cluster_112{
+	color="blue"
+	112 122 124 126 128
+}
+subgraph cluster_114{
+	color="blue"
+	114 130 132 134
+}
+subgraph cluster_120{
+	color="blue"
+	120 136 138
+}
+subgraph cluster_129{
+	color="blue"
+	129 139 141
+}
+subgraph cluster_131{
+	color="blue"
+	131 143 145
+}
+subgraph cluster_133{
+	color="blue"
+	133 147
+}
+subgraph cluster_116{
+	color="blue"
+	116 149 151 153 155
+}
+subgraph cluster_118{
+	color="blue"
+	118 157 159 161 163 165 167 169 171
+}
+subgraph cluster_10{
+	color="blue"
+	10 173 175 177 179 181 183 185 187 189
+}
+1 [label="PLC",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+1 -> {11,9,7,5,3}[style="solid",color="red"]
+11 -> {10}[style="solid",color="red"]
+9 -> {8}[style="solid",color="red"]
+7 -> {6}[style="solid",color="red"]
+5 -> {4}[style="solid",color="red"]
+3 -> {2}[style="solid",color="red"]
+10 -> {173}[style="solid",color="red"]
+8 -> {111}[style="solid",color="red"]
+6 -> {83,81,79}[style="solid",color="red"]
+6 -> {84}[style="dashed",color="ForestGreen",dir="none"]
+4 -> {32}[style="solid",color="red"]
+2 -> {18,12}[style="solid",color="red"]
+173 -> {175}[style="solid",color="red"]
+111 -> {113,112}[style="solid",color="red"]
+83 -> {82}[style="solid",color="red"]
+81 -> {80}[style="solid",color="red"]
+79 -> {78}[style="solid",color="red"]
+32 -> {34,33}[style="solid",color="red"]
+18 -> {20}[style="solid",color="red"]
+12 -> {14}[style="solid",color="red"]
+175 -> {177}[style="solid",color="red"]
+113 -> {115,114}[style="solid",color="red"]
+112 -> {128,126,124,122}[style="solid",color="red"]
+82 -> {107}[style="solid",color="red"]
+80 -> {103}[style="solid",color="red"]
+78 -> {85}[style="solid",color="red"]
+34 -> {36,35}[style="solid",color="red"]
+33 -> {42}[style="solid",color="red"]
+20 -> {22}[style="solid",color="red"]
+14 -> {16}[style="solid",color="red"]
+177 -> {179}[style="solid",color="red"]
+115 -> {117,116}[style="solid",color="red"]
+114 -> {134,132,130}[style="solid",color="red"]
+107 -> {109}[style="solid",color="red"]
+103 -> {105}[style="solid",color="red"]
+85 -> {87}[style="solid",color="red"]
+36 -> {38,37}[style="solid",color="red"]
+35 -> {52}[style="solid",color="red"]
+42 -> {44}[style="solid",color="red"]
+22 -> {24}[style="solid",color="red"]
+179 -> {181}[style="solid",color="red"]
+117 -> {119,118}[style="solid",color="red"]
+116 -> {149}[style="solid",color="red"]
+134 -> {133}[style="solid",color="red"]
+132 -> {131}[style="solid",color="red"]
+130 -> {129}[style="solid",color="red"]
+87 -> {89}[style="solid",color="red"]
+38 -> {40,39}[style="solid",color="red"]
+37 -> {75,73}[style="solid",color="red"]
+52 -> {54}[style="solid",color="red"]
+44 -> {46}[style="solid",color="red"]
+24 -> {26}[style="solid",color="red"]
+181 -> {183}[style="solid",color="red"]
+119 -> {120}[style="solid",color="red"]
+118 -> {157}[style="solid",color="red"]
+149 -> {151}[style="solid",color="red"]
+133 -> {147}[style="solid",color="red"]
+131 -> {143}[style="solid",color="red"]
+129 -> {139}[style="solid",color="red"]
+89 -> {91}[style="solid",color="red"]
+40 -> {41}[style="solid",color="red"]
+39 -> {56}[style="solid",color="red"]
+75 -> {74}[style="solid",color="red"]
+73 -> {72}[style="solid",color="red"]
+46 -> {48}[style="solid",color="red"]
+26 -> {28}[style="solid",color="red"]
+183 -> {185}[style="solid",color="red"]
+120 -> {138,136}[style="solid",color="red"]
+157 -> {159}[style="solid",color="red"]
+151 -> {153}[style="solid",color="red"]
+143 -> {145}[style="solid",color="red"]
+139 -> {141}[style="solid",color="red"]
+91 -> {93}[style="solid",color="red"]
+41 -> {62}[style="solid",color="red"]
+56 -> {58}[style="solid",color="red"]
+74 -> {77}[style="dashed",color="ForestGreen",dir="none"]
+72 -> {76}[style="dashed",color="ForestGreen",dir="none"]
+48 -> {50}[style="solid",color="red"]
+28 -> {30}[style="solid",color="red"]
+185 -> {187}[style="solid",color="red"]
+159 -> {161}[style="solid",color="red"]
+153 -> {155}[style="solid",color="red"]
+93 -> {95}[style="solid",color="red"]
+62 -> {64}[style="solid",color="red"]
+58 -> {60}[style="solid",color="red"]
+187 -> {189}[style="solid",color="red"]
+161 -> {163}[style="solid",color="red"]
+95 -> {97}[style="solid",color="red"]
+64 -> {66}[style="solid",color="red"]
+163 -> {165}[style="solid",color="red"]
+97 -> {99}[style="solid",color="red"]
+66 -> {68}[style="solid",color="red"]
+165 -> {167}[style="solid",color="red"]
+99 -> {101}[style="solid",color="red"]
+68 -> {70}[style="solid",color="red"]
+167 -> {169}[style="solid",color="red"]
+169 -> {171}[style="solid",color="red"]
+2 [label="PLC型号",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+3 [label="PLC型号",shape="box",style="filled",fillcolor="#66CCff"]
+4 [label="软元件",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+5 [label="软元件",shape="box",style="filled",fillcolor="#66CCff"]
+6 [label="常见电路设计",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+7 [label="常见电路设计",shape="box",style="filled",fillcolor="#66CCff"]
+8 [label="指令表",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+9 [label="指令表",shape="box",style="filled",fillcolor="#66CCff"]
+10 [label="状态转移",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+11 [label="状态转移",shape="box",style="filled",fillcolor="#66CCff"]
+12 [label="EX，输入专用",shape="box",style="filled",fillcolor="#66CCff"]
+14 [label="EY，输出专用",shape="box",style="filled",fillcolor="#66CCff"]
+16 [label="M，基本单元",shape="box",style="filled",fillcolor="#66CCff"]
+18 [label="16EX表示16点输入，16EY表示16点输出",shape="box",style="filled",fillcolor="#66CCff"]
+20 [label="M的话看题目，没有说就是平均",shape="box",style="filled",fillcolor="#66CCff"]
+22 [label="比如16M就是8输入8输出",shape="box",style="filled",fillcolor="#66CCff"]
+24 [label="可能组合输出形式，比如16EYR，16点继电器输出",shape="box",style="filled",fillcolor="#66CCff"]
+26 [label="EYT晶体管，EYS双向晶闸管，但重点是点数",shape="box",style="filled",fillcolor="#66CCff"]
+28 [label="从0号分配点数，比如一个组成是32M、16EX",shape="box",style="filled",fillcolor="#66CCff"]
+30 [label="那么32M分配了X0~X15，Y0~Y15，而16EX分配了X16~X31",shape="box",style="filled",fillcolor="#66CCff"]
+32 [label="个人定义",shape="box",style="filled",fillcolor="#66CCff"]
+33 [label="个人定义",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+34 [label="输入输出继电器XY，辅助继电器M",shape="box",style="filled",fillcolor="#66CCff"]
+35 [label="输入输出继电器XY，辅助继电器M",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+36 [label="特殊M",shape="box",style="filled",fillcolor="#66CCff"]
+37 [label="特殊M",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+38 [label="定时器T",shape="box",style="filled",fillcolor="#66CCff"]
+39 [label="定时器T",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+40 [label="计数器C",shape="box",style="filled",fillcolor="#66CCff"]
+41 [label="计数器C",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+42 [label="用A形容表示导通状态的开关（左母线相连，比如常开触点，梯形图长得像电容那个）",shape="box",style="filled",fillcolor="#66CCff"]
+44 [label="用A'形容接收电平状态（右母线相连，梯形图圆形）",shape="box",style="filled",fillcolor="#66CCff"]
+46 [label="比如A'为M0，A是常开元件M0，只用当A'获得高电平时，A才会导通。",shape="box",style="filled",fillcolor="#66CCff"]
+48 [label="A和A'可以有若干个均使用同一个软原件。",shape="box",style="filled",fillcolor="#66CCff"]
+50 [label="比如，只要有1个A'为M0的得到高电平，那么所有常开触点A叫M0的都会导通，所有常闭触点A叫M0都会不导通",shape="box",style="filled",fillcolor="#66CCff"]
+52 [label="上电：给高电平，一种是左母线导通到右边的A'，另一种是SET",shape="box",style="filled",fillcolor="#66CCff"]
+54 [label="X不能使用SET，只能通过外部输入改变A'",shape="box",style="filled",fillcolor="#66CCff"]
+56 [label="timer，每获得x时间的高电平保持，计数+1",shape="box",style="filled",fillcolor="#66CCff"]
+58 [label="PLC有不同x时间的计数器，课本前T0~T63是100ms计数器",shape="box",style="filled",fillcolor="#66CCff"]
+60 [label="(T0,K20)表示T0数20个100ms，也就是2秒时打开",shape="box",style="filled",fillcolor="#66CCff"]
+62 [label="counter，当得到一个上升沿，计数+1",shape="box",style="filled",fillcolor="#66CCff"]
+64 [label="可以用来统计脉冲数，具体说统计通电瞬间的上升沿，比如",shape="box",style="filled",fillcolor="#66CCff"]
+66 [label="可以让C0统计T0的开启次数，同时让T0上电后立刻掉电",shape="box",style="filled",fillcolor="#66CCff"]
+68 [label="(C0,K5),(T0,K20)组合，表示数5次2秒，就是第10秒C0开通",shape="box",style="filled",fillcolor="#66CCff"]
+70 [label="1个Timer搭配若干个Counter，使得在不同秒做不同事情",shape="box",style="filled",fillcolor="#66CCff"]
+72 [label="M8000",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+73 [label="M8000",shape="box",style="filled",fillcolor="#66CCff"]
+74 [label="M8002",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+75 [label="M8002",shape="box",style="filled",fillcolor="#66CCff"]
+76 [label="PLC上电一直为ON，掉电为OFF",shape="box",style="filled",fillcolor="#45b97c"]
+77 [label="PLC上电的时刻，给1个扫描时间的ON，其他时间为OFF",shape="box",style="filled",fillcolor="#45b97c"]
+78 [label="保持",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+79 [label="保持",shape="box",style="filled",fillcolor="#66CCff"]
+80 [label="抢占",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+81 [label="抢占",shape="box",style="filled",fillcolor="#66CCff"]
+82 [label="振荡",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+83 [label="振荡",shape="box",style="filled",fillcolor="#66CCff"]
+84 [label="page51",shape="box",style="filled",fillcolor="#45b97c"]
+85 [label="使用A-&gt;A'，使得A'得到高电平后一直维持高电平",shape="box",style="filled",fillcolor="#66CCff"]
+87 [label="运用于按键型，按键：按着按钮高电平，松开低电平",shape="box",style="filled",fillcolor="#66CCff"]
+89 [label="假设B是输入按钮X0，A是常开触点M0，A'是接收电平的M0",shape="box",style="filled",fillcolor="#66CCff"]
+91 [label="A和B都连接A'，一开始A'掉电，A不导通",shape="box",style="filled",fillcolor="#66CCff"]
+93 [label="B导通后，A'获得高电平,B-&gt;A'，A导通",shape="box",style="filled",fillcolor="#66CCff"]
+95 [label="B断开后，因为A-&gt;A'，A'仍然高电平",shape="box",style="filled",fillcolor="#66CCff"]
+97 [label="因此只要B（按钮X0）按一下，所有A常开触点（M0）都会导通",shape="box",style="filled",fillcolor="#66CCff"]
+99 [label="通常会设计成(A,B)-&gt;C-&gt;A'",shape="box",style="filled",fillcolor="#66CCff"]
+101 [label="A用来保持，B开关，C可以是常闭形式，获得信号后中断保持电路",shape="box",style="filled",fillcolor="#66CCff"]
+103 [label="比如X1控制M1，X2控制M2。M1和M2不能同时得到控制",shape="box",style="filled",fillcolor="#66CCff"]
+105 [label="在M1路上加M2常闭，M2路上加M1常闭即可",shape="box",style="filled",fillcolor="#66CCff"]
+107 [label="利用定时器做到t1秒高电平，t2秒低电平",shape="box",style="filled",fillcolor="#66CCff"]
+109 [label="可结合保持电路运用",shape="box",style="filled",fillcolor="#66CCff"]
+111 [label="组合字母",shape="box",style="filled",fillcolor="#66CCff"]
+112 [label="组合字母",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+113 [label="逻辑指令",shape="box",style="filled",fillcolor="#66CCff"]
+114 [label="逻辑指令",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+115 [label="模块指令",shape="box",style="filled",fillcolor="#66CCff"]
+116 [label="模块指令",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+117 [label="栈指令",shape="box",style="filled",fillcolor="#66CCff"]
+118 [label="栈指令",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+119 [label="取反、置位复位",shape="box",style="filled",fillcolor="#66CCff"]
+120 [label="取反、置位复位",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+122 [label="常用4种开关，没组合就是常开",shape="box",style="filled",fillcolor="#66CCff"]
+124 [label="I，取反，即常闭",shape="box",style="filled",fillcolor="#66CCff"]
+126 [label="P，上升沿",shape="box",style="filled",fillcolor="#66CCff"]
+128 [label="F，fall下降沿",shape="box",style="filled",fillcolor="#66CCff"]
+129 [label="LD",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+130 [label="LD",shape="box",style="filled",fillcolor="#66CCff"]
+131 [label="AND",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+132 [label="AND",shape="box",style="filled",fillcolor="#66CCff"]
+133 [label="OR",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+134 [label="OR",shape="box",style="filled",fillcolor="#66CCff"]
+136 [label="INV，电平到这位置取反",shape="box",style="filled",fillcolor="#66CCff"]
+138 [label="SET、RST(reset)置1(高电平)，清0(低电平)",shape="box",style="filled",fillcolor="#66CCff"]
+139 [label="开一个新模块，有1个常开(触点开关)连着左母线",shape="box",style="filled",fillcolor="#66CCff"]
+141 [label="LDI表示新模块常闭、LDP、LDF类似",shape="box",style="filled",fillcolor="#66CCff"]
+143 [label="串联，对于当前模块，在模块最右侧接1个常开",shape="box",style="filled",fillcolor="#66CCff"]
+145 [label="ANI右侧常闭、ANDP、ANDF类似",shape="box",style="filled",fillcolor="#66CCff"]
+147 [label="并联，对于当前模块，将常开左侧连左母线，常开右侧连模块右侧",shape="box",style="filled",fillcolor="#66CCff"]
+149 [label="ANB模块串，ORB模块并",shape="box",style="filled",fillcolor="#66CCff"]
+151 [label="LD……LD……ANB，第二个LD和ANB之间组成的新模块，串联在第一个LD模块的右侧",shape="box",style="filled",fillcolor="#66CCff"]
+153 [label="ORB同理，他们可以反复多嵌套",shape="box",style="filled",fillcolor="#66CCff"]
+155 [label="比如LD……(LD……(LD……ANB)……(LD……ORB)……ANB)",shape="box",style="filled",fillcolor="#66CCff"]
+157 [label="MPS(push，入栈)、MRD(read，读取)、MPP(pop，出栈)",shape="box",style="filled",fillcolor="#66CCff"]
+159 [label="栈：先进后出。MRD会读取最后一个MPS入栈值",shape="box",style="filled",fillcolor="#66CCff"]
+161 [label="使用MPP会读取并弹出最后一个push进入的值",shape="box",style="filled",fillcolor="#66CCff"]
+163 [label="1.用MPS将当前模块最右点位置压入栈",shape="box",style="filled",fillcolor="#66CCff"]
+165 [label="相连其他元件后，使用RD重新回到这个相连触点位置",shape="box",style="filled",fillcolor="#66CCff"]
+167 [label="MPP也是回到这个这个位置，且弹出栈顶。",shape="box",style="filled",fillcolor="#66CCff"]
+169 [label="使用ORB指令可以多模块进入1模块",shape="box",style="filled",fillcolor="#66CCff"]
+171 [label="使用栈指令可以1模块出去多模块",shape="box",style="filled",fillcolor="#66CCff"]
+173 [label="步进S，S0~S9是初始状态，双线框表示",shape="box",style="filled",fillcolor="#66CCff"]
+175 [label="S0-(条件)-&gt;S20-(条件)-&gt;S21",shape="box",style="filled",fillcolor="#66CCff"]
+177 [label="当满足条件时，会从一个状态S转移到另一状态S，不再回去",shape="box",style="filled",fillcolor="#66CCff"]
+179 [label="分支：连接若干个，并联的带条件S，哪个S满足条件就往那个转移",shape="box",style="filled",fillcolor="#66CCff"]
+181 [label="并行分支：连接若干个，并联不带条件S，因此可以都转移",shape="box",style="filled",fillcolor="#66CCff"]
+183 [label="指令是STL。STL可以理解为开新的左母线",shape="box",style="filled",fillcolor="#66CCff"]
+185 [label="运行时转移到那里时(SET,S20)，那个母线模块通电，其他的母线模块都不工作",shape="box",style="filled",fillcolor="#66CCff"]
+187 [label="比如，STL……STL之间的东西都属于第1个STL的,(STL……)(STL……)STL",shape="box",style="filled",fillcolor="#66CCff"]
+189 [label="使用SET可以转移STL",shape="box",style="filled",fillcolor="#66CCff"]
+}

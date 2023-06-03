@@ -1,0 +1,337 @@
+digraph Example{
+graph [bgcolor="pink"]
+subgraph cluster_1{
+	color="blue"
+	1 2 4 6 8 10 12
+}
+subgraph cluster_7{
+	color="blue"
+	7 16 18 20
+}
+subgraph cluster_17{
+	color="blue"
+	17 22 24 26{rank=same;22;24;26;}
+
+}
+subgraph cluster_23{
+	color="blue"
+	23 28 30 32 34 36 38 40{rank=same;28;30;32;34;36;38;40;}
+
+}
+subgraph cluster_25{
+	color="blue"
+	25 46 48 50
+}
+subgraph cluster_45{
+	color="blue"
+	45 53
+}
+subgraph cluster_27{
+	color="blue"
+	27 55 57 59
+}
+subgraph cluster_49{
+	color="blue"
+	49 68 70 72 74 76 78 80
+}
+subgraph cluster_79{
+	color="blue"
+	79 92 94
+}
+subgraph cluster_9{
+	color="blue"
+	9 97 99 101
+}
+subgraph cluster_96{
+	color="blue"
+	96 102 104 106
+}
+subgraph cluster_98{
+	color="blue"
+	98 108 110
+}
+subgraph cluster_100{
+	color="blue"
+	100 112 114 116 118{rank=same;112;114;116;118;}
+
+}
+subgraph cluster_117{
+	color="blue"
+	117 122 124 126 128
+}
+subgraph cluster_119{
+	color="blue"
+	119 130 131 133
+}
+subgraph cluster_11{
+	color="blue"
+	11 138 140 142 144
+}
+subgraph cluster_139{
+	color="blue"
+	139 146 148 150
+}
+subgraph cluster_13{
+	color="blue"
+	13 162 164
+}
+subgraph cluster_161{
+	color="blue"
+	161 165 167 169 171{rank=same;165;167;169;171;}
+
+}
+subgraph cluster_173{
+	color="blue"
+	173
+}
+1 [label="计算机控制",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+1 -> {2}[style="solid",color="red"]
+2 -> {4,3}[style="solid",color="red"]
+4 -> {6,5}[style="solid",color="red"]
+3 -> {14}[style="solid",color="red"]
+6 -> {8,7}[style="solid",color="red"]
+5 -> {174}[style="solid",color="red"]
+5 -> {175}[style="dashed",color="ForestGreen",dir="none"]
+8 -> {10,9}[style="solid",color="red"]
+7 -> {20,18,16}[style="solid",color="red"]
+10 -> {12,11}[style="solid",color="red"]
+9 -> {101,99,97}[style="solid",color="red"]
+20 -> {19}[style="solid",color="red"]
+18 -> {17}[style="solid",color="red"]
+12 -> {13}[style="solid",color="red"]
+11 -> {144,142,140,138}[style="solid",color="red"]
+101 -> {100}[style="solid",color="red"]
+99 -> {98}[style="solid",color="red"]
+97 -> {96}[style="solid",color="red"]
+19 -> {21}[style="dashed",color="ForestGreen",dir="none"]
+17 -> {22}[style="solid",color="red"]
+13 -> {164,162}[style="solid",color="red"]
+144 -> {143}[style="solid",color="red"]
+142 -> {141}[style="solid",color="red"]
+140 -> {139}[style="solid",color="red"]
+100 -> {112}[style="solid",color="red"]
+98 -> {108}[style="solid",color="red"]
+98 -> {134}[style="dashed",color="ForestGreen",dir="none"]
+96 -> {102}[style="solid",color="red"]
+96 -> {135}[style="dashed",color="ForestGreen",dir="none"]
+22 -> {24,23}[style="solid",color="red"]
+162 -> {161}[style="solid",color="red"]
+143 -> {160,159}[style="dashed",color="ForestGreen",dir="none"]
+141 -> {156}[style="dashed",color="ForestGreen",dir="none"]
+139 -> {153,150,148,146}[style="solid",color="red"]
+139 -> {152,151}[style="dashed",color="ForestGreen",dir="none"]
+112 -> {114,113}[style="solid",color="red"]
+108 -> {110}[style="solid",color="red"]
+102 -> {104}[style="solid",color="red"]
+24 -> {26,25}[style="solid",color="red"]
+23 -> {28}[style="solid",color="red"]
+161 -> {165}[style="solid",color="red"]
+150 -> {149}[style="solid",color="red"]
+148 -> {147}[style="solid",color="red"]
+146 -> {145}[style="solid",color="red"]
+114 -> {116,115}[style="solid",color="red"]
+113 -> {120}[style="dashed",color="ForestGreen",dir="none"]
+104 -> {106}[style="solid",color="red"]
+26 -> {27}[style="solid",color="red"]
+25 -> {50,48,46}[style="solid",color="red"]
+25 -> {51}[style="dashed",color="ForestGreen",dir="none"]
+28 -> {30}[style="solid",color="red"]
+165 -> {167}[style="solid",color="red"]
+149 -> {158,157}[style="dashed",color="ForestGreen",dir="none"]
+147 -> {155}[style="dashed",color="ForestGreen",dir="none"]
+145 -> {154}[style="dashed",color="ForestGreen",dir="none"]
+116 -> {118,117}[style="solid",color="red"]
+115 -> {121}[style="dashed",color="ForestGreen",dir="none"]
+27 -> {59,57,55}[style="solid",color="red"]
+50 -> {49}[style="solid",color="red"]
+48 -> {47}[style="solid",color="red"]
+46 -> {45}[style="solid",color="red"]
+30 -> {32}[style="solid",color="red"]
+167 -> {169}[style="solid",color="red"]
+118 -> {119}[style="solid",color="red"]
+117 -> {122}[style="solid",color="red"]
+49 -> {80,78,76,74,72,70,68}[style="solid",color="red"]
+49 -> {66,65,64,63,62}[style="dashed",color="ForestGreen",dir="none"]
+47 -> {60}[style="solid",color="red"]
+47 -> {61}[style="dashed",color="ForestGreen",dir="none"]
+45 -> {53}[style="solid",color="red"]
+32 -> {34}[style="solid",color="red"]
+169 -> {171}[style="solid",color="red"]
+119 -> {133,131,130}[style="solid",color="red"]
+122 -> {124}[style="solid",color="red"]
+80 -> {79}[style="solid",color="red"]
+78 -> {77}[style="solid",color="red"]
+76 -> {75}[style="solid",color="red"]
+74 -> {73}[style="solid",color="red"]
+72 -> {71}[style="solid",color="red"]
+70 -> {69}[style="solid",color="red"]
+68 -> {67}[style="solid",color="red"]
+34 -> {36}[style="solid",color="red"]
+133 -> {132}[style="solid",color="red"]
+131 -> {96}[style="solid",color="red"]
+130 -> {98}[style="solid",color="red"]
+124 -> {126}[style="solid",color="red"]
+79 -> {94,92}[style="solid",color="red"]
+77 -> {90}[style="dashed",color="ForestGreen",dir="none"]
+75 -> {89}[style="dashed",color="ForestGreen",dir="none"]
+73 -> {88,87}[style="dashed",color="ForestGreen",dir="none"]
+71 -> {83,82}[style="dashed",color="ForestGreen",dir="none"]
+69 -> {86,85,84}[style="dashed",color="ForestGreen",dir="none"]
+67 -> {81}[style="dashed",color="ForestGreen",dir="none"]
+36 -> {38,37}[style="solid",color="red"]
+132 -> {136}[style="dashed",color="ForestGreen",dir="none"]
+126 -> {128}[style="solid",color="red"]
+92 -> {91}[style="solid",color="red"]
+38 -> {40}[style="solid",color="red"]
+37 -> {44}[style="dashed",color="ForestGreen",dir="none"]
+91 -> {95}[style="dashed",color="ForestGreen",dir="none"]
+40 -> {41}[style="solid",color="red"]
+41 -> {43,42}[style="dashed",color="ForestGreen",dir="none"]
+2 [label="变换表",shape="box",style="filled",fillcolor="#66CCff"]
+3 [label="变换表",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+4 [label="生成函数",shape="box",style="filled",fillcolor="#66CCff"]
+5 [label="生成函数",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+6 [label="连续与离散",shape="box",style="filled",fillcolor="#66CCff"]
+7 [label="连续与离散",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+8 [label="差分方程",shape="box",style="filled",fillcolor="#66CCff"]
+9 [label="差分方程",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+10 [label="s传递函数系统",shape="box",style="filled",fillcolor="#66CCff"]
+11 [label="s传递函数系统",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+12 [label="最小拍控制器",shape="box",style="filled",fillcolor="#66CCff"]
+13 [label="最小拍控制器",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+14 [label="",image="pic/1.png",shape="box",]
+16 [label="A/D、D/A",shape="box",style="filled",fillcolor="#66CCff"]
+17 [label="采样",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+18 [label="采样",shape="box",style="filled",fillcolor="#66CCff"]
+19 [label="量化",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+20 [label="量化",shape="box",style="filled",fillcolor="#66CCff"]
+21 [label="量化单位q=2^(-n)",shape="box",style="filled",fillcolor="#45b97c"]
+22 [label="香农定理",shape="box",style="filled",fillcolor="#66CCff"]
+23 [label="香农定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+24 [label="采样函数",shape="box",style="filled",fillcolor="#66CCff"]
+25 [label="采样函数",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+26 [label="零阶保持器",shape="box",style="filled",fillcolor="#66CCff"]
+27 [label="零阶保持器",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+28 [label="Ws&gt;2Wn",shape="box",style="filled",fillcolor="#66CCff"]
+30 [label="Ws是采样频率",shape="box",style="filled",fillcolor="#66CCff"]
+32 [label="Wm是原函数最大角频率",shape="box",style="filled",fillcolor="#66CCff"]
+34 [label="Wn=Ws/2折叠频率",shape="box",style="filled",fillcolor="#66CCff"]
+36 [label="隐匿震荡",shape="box",style="filled",fillcolor="#66CCff"]
+37 [label="隐匿震荡",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+38 [label="静态增益",shape="box",style="filled",fillcolor="#66CCff"]
+40 [label="前置滤波器",shape="box",style="filled",fillcolor="#66CCff"]
+41 [label="前置滤波器",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+42 [label="当不满足Ws>2Wm时，不满足的高频信号会混入低频信号，可以用低通滤波",shape="box",style="filled",fillcolor="#45b97c"]
+43 [label="针对原函数，比如需要滤波sinwt，那么在-w和w大一点的位置之间存在滤波值|H(jw)|即可",shape="box",style="filled",fillcolor="#45b97c"]
+44 [label="采样频率是某个频率分量的若干倍，即刚好在该分量值为0时采样，近似于没有",shape="box",style="filled",fillcolor="#45b97c"]
+45 [label="时域",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+46 [label="时域",shape="box",style="filled",fillcolor="#66CCff"]
+47 [label="拉式变换",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+48 [label="拉式变换",shape="box",style="filled",fillcolor="#66CCff"]
+49 [label="z变换",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+50 [label="z变换",shape="box",style="filled",fillcolor="#66CCff"]
+51 [label="其中T是采样时间，打*表示离散变换",shape="box",style="filled",fillcolor="#45b97c"]
+53 [label="f*(t)=Σf(nT)δ(t-nT)",shape="box",style="filled",fillcolor="#66CCff"]
+55 [label="用1(t)或者u(t)表示单位阶跃",shape="box",style="filled",fillcolor="#66CCff"]
+57 [label="时域:1(t)-1(t-T)",shape="box",style="filled",fillcolor="#66CCff"]
+59 [label="拉式：(1-e^(-st))/s",shape="box",style="filled",fillcolor="#66CCff"]
+60 [label="",image="pic/3.png",shape="box",]
+61 [label="用复数s=σ+jω，来表达函数",shape="box",style="filled",fillcolor="#45b97c"]
+62 [label="用z=f(exp,s)，来表达函数",shape="box",style="filled",fillcolor="#45b97c"]
+63 [label="F(z)=Σf(kT)z^(-k)",shape="box",style="filled",fillcolor="#45b97c"]
+64 [label="s=σ+jω，z=e^(Ts)",shape="box",style="filled",fillcolor="#45b97c"]
+65 [label="z^(-1)代表信号滞后一个周期",shape="box",style="filled",fillcolor="#45b97c"]
+66 [label="连续与离散用1个方程",shape="box",style="filled",fillcolor="#45b97c"]
+67 [label="线性定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+68 [label="线性定理",shape="box",style="filled",fillcolor="#66CCff"]
+69 [label="时移超前定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+70 [label="时移超前定理",shape="box",style="filled",fillcolor="#66CCff"]
+71 [label="时移延迟定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+72 [label="时移延迟定理",shape="box",style="filled",fillcolor="#66CCff"]
+73 [label="复数位移定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+74 [label="复数位移定理",shape="box",style="filled",fillcolor="#66CCff"]
+75 [label="初值定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+76 [label="初值定理",shape="box",style="filled",fillcolor="#66CCff"]
+77 [label="终值定理",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+78 [label="终值定理",shape="box",style="filled",fillcolor="#66CCff"]
+79 [label="部分分式",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+80 [label="部分分式",shape="box",style="filled",fillcolor="#66CCff"]
+81 [label="两个相加的函数z变换，等价于拆开来各自z变换",shape="box",style="filled",fillcolor="#45b97c"]
+82 [label="z[f(t-nT)]=z^(-n)F(z)",shape="box",style="filled",fillcolor="#45b97c"]
+83 [label="延后n个单位的z变换",shape="box",style="filled",fillcolor="#45b97c"]
+84 [label="z[f(t+nT)]=z^(n)F(z)-z^(n)F'(z)",shape="box",style="filled",fillcolor="#45b97c"]
+85 [label="前者是无限项离散，后者是有限前n项离散",shape="box",style="filled",fillcolor="#45b97c"]
+86 [label="（即，提前n个就减掉那n个的离散）",shape="box",style="filled",fillcolor="#45b97c"]
+87 [label="Z[e^(at)f(t)]=F(ze^(aT))",shape="box",style="filled",fillcolor="#45b97c"]
+88 [label="即，将z=ze^(aT)带进去F(z)",shape="box",style="filled",fillcolor="#45b97c"]
+89 [label="变换后对F(z)带入z→inf，=f(0)",shape="box",style="filled",fillcolor="#45b97c"]
+90 [label="带入延后无穷个单位的f(kT),k→inf，等于z→1的(z-1)F(z)=(1-z^(-1))F(z)",shape="box",style="filled",fillcolor="#45b97c"]
+91 [label="长除法",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+92 [label="长除法",shape="box",style="filled",fillcolor="#66CCff"]
+94 [label="展开成ABC分式硬解",shape="box",style="filled",fillcolor="#66CCff"]
+95 [label="分子除分母，硬算对0补齐",shape="box",style="filled",fillcolor="#45b97c"]
+96 [label="向前差分",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+97 [label="向前差分",shape="box",style="filled",fillcolor="#66CCff"]
+98 [label="向后差分",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+99 [label="向后差分",shape="box",style="filled",fillcolor="#66CCff"]
+100 [label="差分运用",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+101 [label="差分运用",shape="box",style="filled",fillcolor="#66CCff"]
+102 [label="符号：上△^n",shape="box",style="filled",fillcolor="#66CCff"]
+104 [label="1阶：△f[x]=f[x+1]-f[x]",shape="box",style="filled",fillcolor="#66CCff"]
+106 [label="2阶:△2f[x]=△f[x+1]-△f[x]",shape="box",style="filled",fillcolor="#66CCff"]
+108 [label="符号：下△^n",shape="box",style="filled",fillcolor="#66CCff"]
+110 [label="1阶：下△f[x]=f[x]-f[x-1]",shape="box",style="filled",fillcolor="#66CCff"]
+112 [label="差分-微分表达",shape="box",style="filled",fillcolor="#66CCff"]
+113 [label="差分-微分表达",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+114 [label="差分迭代法",shape="box",style="filled",fillcolor="#66CCff"]
+115 [label="差分迭代法",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+116 [label="差分z变换",shape="box",style="filled",fillcolor="#66CCff"]
+117 [label="差分z变换",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+118 [label="差分离散化",shape="box",style="filled",fillcolor="#66CCff"]
+119 [label="差分离散化",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+120 [label="假如是输出，那么c(t)就是c(k),d[c(t)]/dt就是c(k+1),二阶就是c(k+2)",shape="box",style="filled",fillcolor="#45b97c"]
+121 [label="就是不断带入递推",shape="box",style="filled",fillcolor="#45b97c"]
+122 [label="根据时移超前定理",shape="box",style="filled",fillcolor="#66CCff"]
+124 [label="z[f(t+nT)]=z^(n)F*(z)-z^(n)F'(z)",shape="box",style="filled",fillcolor="#66CCff"]
+126 [label="c(k+2)=z^2c(z)-z^2c(0)-z^1c(1)",shape="box",style="filled",fillcolor="#66CCff"]
+128 [label="因此，要求c(z)，将c(0),c(1)，以及其他z变换的东西移动到右边即可",shape="box",style="filled",fillcolor="#66CCff"]
+130 [label="向后差分",shape="box",style="filled",fillcolor="#66CCff"]
+131 [label="向前差分",shape="box",style="filled",fillcolor="#66CCff"]
+132 [label="双线性差分",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+133 [label="双线性差分",shape="box",style="filled",fillcolor="#66CCff"]
+134 [label="s=(1-z^-1)/T",shape="box",style="filled",fillcolor="#45b97c"]
+135 [label="s=(z-1)/T",shape="box",style="filled",fillcolor="#45b97c"]
+136 [label="s=2(z-1)/T(z+1)",shape="box",style="filled",fillcolor="#45b97c"]
+138 [label="闭环",shape="box",style="filled",fillcolor="#66CCff"]
+139 [label="传递函数概念",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+140 [label="传递函数概念",shape="box",style="filled",fillcolor="#66CCff"]
+141 [label="差分方程与传递转换",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+142 [label="差分方程与传递转换",shape="box",style="filled",fillcolor="#66CCff"]
+143 [label="稳态误差计算",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+144 [label="稳态误差计算",shape="box",style="filled",fillcolor="#66CCff"]
+145 [label="极点",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+146 [label="极点",shape="box",style="filled",fillcolor="#66CCff"]
+147 [label="零点",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+148 [label="零点",shape="box",style="filled",fillcolor="#66CCff"]
+149 [label="系统稳定",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+150 [label="系统稳定",shape="box",style="filled",fillcolor="#66CCff"]
+151 [label="串联相乘并联相加，每个部分等于那一部分自采样后的乘积和",shape="box",style="filled",fillcolor="#45b97c"]
+152 [label="可以对每个采样部分分开变换之后，再在最后乘在一起",shape="box",style="filled",fillcolor="#45b97c"]
+153 [label="",image="pic/2.png",shape="box",]
+154 [label="分母为0",shape="box",style="filled",fillcolor="#45b97c"]
+155 [label="分子为0",shape="box",style="filled",fillcolor="#45b97c"]
+156 [label="z变换，一般用时移延迟定理",shape="box",style="filled",fillcolor="#45b97c"]
+157 [label="算分母特征根，特征根在单位圆就是稳定",shape="box",style="filled",fillcolor="#45b97c"]
+158 [label="特征根绝对值越小收敛越快",shape="box",style="filled",fillcolor="#45b97c"]
+159 [label="pic",shape="box",style="filled",fillcolor="#45b97c"]
+160 [label="5.png",shape="box",style="filled",fillcolor="#45b97c"]
+161 [label="最小拍概念",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+162 [label="最小拍概念",shape="box",style="filled",fillcolor="#66CCff"]
+164 [label="计算方式",shape="box",style="filled",fillcolor="#66CCff"]
+165 [label="在理想静差情况下采样周期最小的做法",shape="box",style="filled",fillcolor="#66CCff"]
+167 [label="由于(1-w(z))/G(z)w(z)",shape="box",style="filled",fillcolor="#66CCff"]
+169 [label="用长除法验证D(z)*R(z)*w(z)是否收敛于某项",shape="box",style="filled",fillcolor="#66CCff"]
+171 [label="若是离散（比如单位阶跃）那么要乘0阶保持器",shape="box",style="filled",fillcolor="#66CCff"]
+174 [label="",image="pic/4.png",shape="box",]
+175 [label="多项式生成函数唯一，但生成函数反变换多项式不唯一",shape="box",style="filled",fillcolor="#45b97c"]
+}

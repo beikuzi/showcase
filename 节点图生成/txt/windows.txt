@@ -1,0 +1,14 @@
+4	windows	D盘	E盘
+	
+4	E盘		github仓库	百度云下载	消息记录
+4	消息记录	网易云音乐	qq/微信消息记录
+
+4	D盘		install	env
+4	env		curl	mingw	Graphviz	json	
+
+4	install	tool	play	msg	study
+4	tool		flash	搜狗	winrar	clash	鲁大师	github	腾讯会议
+4	play		ai绘画		steam	MMD
+4	msg		qq/微信	百度云	网易云
+4	study		plc西门子	c++	vscode	matlab	python	
+

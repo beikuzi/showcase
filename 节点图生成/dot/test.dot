@@ -1,0 +1,221 @@
+digraph Example{
+graph [bgcolor="pink"]
+subgraph cluster_1{
+	color="blue"
+	1 3 5 7 9 11
+}
+subgraph cluster_2{
+	color="blue"
+	2 12 14 16 18 20 22{rank=same;12;14;16;18;20;22;}
+
+}
+subgraph cluster_24{
+	color="blue"
+	24 26 28 30 32 34
+}
+subgraph cluster_6{
+	color="blue"
+	6 36 38
+}
+subgraph cluster_37{
+	color="blue"
+	37 40 42 44 46
+}
+subgraph cluster_41{
+	color="blue"
+	41 48 50 52 54
+}
+subgraph cluster_47{
+	color="blue"
+	47 58 59 61
+}
+subgraph cluster_51{
+	color="blue"
+	51 63 65 67 69
+}
+subgraph cluster_39{
+	color="blue"
+	39 71 73
+}
+subgraph cluster_49{
+	color="blue"
+	49 75 77
+}
+subgraph cluster_53{
+	color="blue"
+	53 78
+}
+subgraph cluster_4{
+	color="blue"
+	4 80 82 84 86 88 90 92
+}
+subgraph cluster_79{
+	color="blue"
+	79 94 96 98 100 102
+}
+subgraph cluster_8{
+	color="blue"
+	8 104 106 108 110
+}
+subgraph cluster_103{
+	color="blue"
+	103 112 114
+}
+subgraph cluster_107{
+	color="blue"
+	107 116 118
+}
+subgraph cluster_105{
+	color="blue"
+	105 120 122
+}
+subgraph cluster_109{
+	color="blue"
+	109 124 126
+}
+subgraph cluster_10{
+	color="blue"
+	10 128 130 132 134 136 138 140 142
+}
+1 [label="技能树",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+1 -> {11,9,7,5,3}[style="solid",color="red"]
+11 -> {10}[style="solid",color="red"]
+9 -> {8}[style="solid",color="red"]
+7 -> {6}[style="solid",color="red"]
+5 -> {4}[style="solid",color="red"]
+3 -> {2}[style="solid",color="red"]
+10 -> {142,140,138,136,134,132,130,128}[style="solid",color="red"]
+8 -> {110,108,106,104}[style="solid",color="red"]
+6 -> {38,36}[style="solid",color="red"]
+4 -> {92,90,88,86,84,82,80}[style="solid",color="red"]
+2 -> {12}[style="solid",color="red"]
+110 -> {109}[style="solid",color="red"]
+108 -> {107}[style="solid",color="red"]
+106 -> {105}[style="solid",color="red"]
+104 -> {103}[style="solid",color="red"]
+38 -> {37}[style="solid",color="red"]
+80 -> {79}[style="solid",color="red"]
+12 -> {14}[style="solid",color="red"]
+109 -> {126,124}[style="solid",color="red"]
+107 -> {118,116}[style="solid",color="red"]
+105 -> {122,120}[style="solid",color="red"]
+103 -> {114,112}[style="solid",color="red"]
+37 -> {46,44,42,40}[style="solid",color="red"]
+79 -> {102,100,98,96,94}[style="solid",color="red"]
+14 -> {16,15}[style="solid",color="red"]
+42 -> {41}[style="solid",color="red"]
+40 -> {39}[style="solid",color="red"]
+16 -> {18,17}[style="solid",color="red"]
+15 -> {24}[style="solid",color="red"]
+41 -> {54,52,50,48}[style="solid",color="red"]
+39 -> {73,71}[style="solid",color="red"]
+18 -> {20}[style="solid",color="red"]
+17 -> {24}[style="solid",color="red"]
+24 -> {34,32,30,28,26}[style="solid",color="red"]
+54 -> {53}[style="solid",color="red"]
+52 -> {51}[style="solid",color="red"]
+50 -> {49}[style="solid",color="red"]
+48 -> {47}[style="solid",color="red"]
+20 -> {22}[style="solid",color="red"]
+53 -> {78}[style="solid",color="red"]
+51 -> {69,67,65,63}[style="solid",color="red"]
+49 -> {77,75}[style="solid",color="red"]
+47 -> {61,59,58}[style="solid",color="red"]
+77 -> {76}[style="solid",color="red"]
+59 -> {55}[style="solid",color="red"]
+55 -> {76}[style="solid",color="red"]
+55 -> {56}[style="dashed",color="ForestGreen",dir="none"]
+2 [label="电子类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+3 [label="电子类",shape="box",style="filled",fillcolor="#66CCff"]
+4 [label="数学类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+5 [label="数学类",shape="box",style="filled",fillcolor="#66CCff"]
+6 [label="算法类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+7 [label="算法类",shape="box",style="filled",fillcolor="#66CCff"]
+8 [label="软件类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+9 [label="软件类",shape="box",style="filled",fillcolor="#66CCff"]
+10 [label="语法类",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+11 [label="语法类",shape="box",style="filled",fillcolor="#66CCff"]
+12 [label="电路",shape="box",style="filled",fillcolor="#66CCff"]
+14 [label="模电",shape="box",style="filled",fillcolor="#66CCff"]
+15 [label="模电",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+16 [label="数电",shape="box",style="filled",fillcolor="#66CCff"]
+17 [label="数电",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+18 [label="电力电子",shape="box",style="filled",fillcolor="#66CCff"]
+20 [label="电拖",shape="box",style="filled",fillcolor="#66CCff"]
+22 [label="自动控制、运动控制、现代控制",shape="box",style="filled",fillcolor="#66CCff"]
+24 [label="嵌入式",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+26 [label="汇编语言",shape="box",style="filled",fillcolor="#66CCff"]
+28 [label="操作系统原理",shape="box",style="filled",fillcolor="#66CCff"]
+30 [label="设备驱动程序",shape="box",style="filled",fillcolor="#66CCff"]
+32 [label="通信协议",shape="box",style="filled",fillcolor="#66CCff"]
+34 [label="plc",shape="box",style="filled",fillcolor="#66CCff"]
+36 [label="AI",shape="box",style="filled",fillcolor="#66CCff"]
+37 [label="acm",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+38 [label="acm",shape="box",style="filled",fillcolor="#66CCff"]
+39 [label="基础算法",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+40 [label="基础算法",shape="box",style="filled",fillcolor="#66CCff"]
+41 [label="图论",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+42 [label="图论",shape="box",style="filled",fillcolor="#66CCff"]
+44 [label="数据结构",shape="box",style="filled",fillcolor="#66CCff"]
+46 [label="数学",shape="box",style="filled",fillcolor="#66CCff"]
+47 [label="最短路",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+48 [label="最短路",shape="box",style="filled",fillcolor="#66CCff"]
+49 [label="最小生成树",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+50 [label="最小生成树",shape="box",style="filled",fillcolor="#66CCff"]
+51 [label="网络流",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+52 [label="网络流",shape="box",style="filled",fillcolor="#66CCff"]
+53 [label="并查集",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+54 [label="并查集",shape="box",style="filled",fillcolor="#66CCff"]
+55 [label="dijk",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+56 [label="dijk实际是spfa的贪心堆改良",shape="box",style="filled",fillcolor="#45b97c"]
+58 [label="spfa",shape="box",style="filled",fillcolor="#66CCff"]
+59 [label="dijk",shape="box",style="filled",fillcolor="#66CCff"]
+61 [label="floyd",shape="box",style="filled",fillcolor="#66CCff"]
+63 [label="EK",shape="box",style="filled",fillcolor="#66CCff"]
+65 [label="dinic",shape="box",style="filled",fillcolor="#66CCff"]
+67 [label="ISAP",shape="box",style="filled",fillcolor="#66CCff"]
+69 [label="HAPP",shape="box",style="filled",fillcolor="#66CCff"]
+71 [label="贪心",shape="box",style="filled",fillcolor="#66CCff"]
+73 [label="dp",shape="box",style="filled",fillcolor="#66CCff"]
+75 [label="krus",shape="box",style="filled",fillcolor="#66CCff"]
+76 [label="prim",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+77 [label="prim",shape="box",style="filled",fillcolor="#66CCff"]
+78 [label="krus",shape="box",style="filled",fillcolor="#66CCff"]
+79 [label="复变",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+80 [label="复变",shape="box",style="filled",fillcolor="#66CCff"]
+82 [label="微分方程",shape="box",style="filled",fillcolor="#66CCff"]
+84 [label="概率论",shape="box",style="filled",fillcolor="#66CCff"]
+86 [label="矩阵",shape="box",style="filled",fillcolor="#66CCff"]
+88 [label="傅里叶变换",shape="box",style="filled",fillcolor="#66CCff"]
+90 [label="拉氏变换与传递函数",shape="box",style="filled",fillcolor="#66CCff"]
+92 [label="matlab",shape="box",style="filled",fillcolor="#66CCff"]
+94 [label="基础定义",shape="box",style="filled",fillcolor="#66CCff"]
+96 [label="解析函数",shape="box",style="filled",fillcolor="#66CCff"]
+98 [label="复变函数积分",shape="box",style="filled",fillcolor="#66CCff"]
+100 [label="解析函数级数表示",shape="box",style="filled",fillcolor="#66CCff"]
+102 [label="傅叶变换和拉氏变换",shape="box",style="filled",fillcolor="#66CCff"]
+103 [label="绘画",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+104 [label="绘画",shape="box",style="filled",fillcolor="#66CCff"]
+105 [label="bot",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+106 [label="bot",shape="box",style="filled",fillcolor="#66CCff"]
+107 [label="声音",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+108 [label="声音",shape="box",style="filled",fillcolor="#66CCff"]
+109 [label="视觉",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+110 [label="视觉",shape="box",style="filled",fillcolor="#66CCff"]
+112 [label="扩散模型",shape="box",style="filled",fillcolor="#66CCff"]
+114 [label="blender",shape="box",style="filled",fillcolor="#66CCff"]
+116 [label="vocaloid",shape="box",style="filled",fillcolor="#66CCff"]
+118 [label="VITS",shape="box",style="filled",fillcolor="#66CCff"]
+120 [label="qq机器人",shape="box",style="filled",fillcolor="#66CCff"]
+122 [label="chatgpt",shape="box",style="filled",fillcolor="#66CCff"]
+124 [label="opencv",shape="box",style="filled",fillcolor="#66CCff"]
+126 [label="slam",shape="box",style="filled",fillcolor="#66CCff"]
+128 [label="github",shape="box",style="filled",fillcolor="#66CCff"]
+130 [label="linux",shape="box",style="filled",fillcolor="#66CCff"]
+132 [label="c++",shape="box",style="filled",fillcolor="#66CCff"]
+134 [label="java",shape="box",style="filled",fillcolor="#66CCff"]
+136 [label="python",shape="box",style="filled",fillcolor="#66CCff"]
+138 [label="ros",shape="box",style="filled",fillcolor="#66CCff"]
+140 [label="数据库",shape="box",style="filled",fillcolor="#66CCff"]
+142 [label="网络技术",shape="box",style="filled",fillcolor="#66CCff"]
+}

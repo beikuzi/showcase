@@ -1,0 +1,34 @@
+digraph Example{
+graph [bgcolor="pink"]
+subgraph cluster_1{
+	color="blue"
+	1 3 5 7 9 11
+}
+subgraph cluster_8{
+	color="blue"
+	8 13 15
+}
+subgraph cluster_10{
+	color="blue"
+	10 17 19 21 23
+}
+1 [label="电梯设计",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+1 -> {11,9,7,5,3}[style="solid",color="red"]
+11 -> {10}[style="solid",color="red"]
+9 -> {8}[style="solid",color="red"]
+10 -> {23,21,19,17}[style="solid",color="red"]
+8 -> {15,13}[style="solid",color="red"]
+3 [label="初始化模块",shape="box",style="filled",fillcolor="#66CCff"]
+5 [label="开关门模块",shape="box",style="filled",fillcolor="#66CCff"]
+7 [label="楼层灯模块",shape="box",style="filled",fillcolor="#66CCff"]
+8 [label="移动模块",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+9 [label="移动模块",shape="box",style="filled",fillcolor="#66CCff"]
+10 [label="楼层模块",shape="Mrecord",style="filled",fillcolor="#FF8C00"]
+11 [label="楼层模块",shape="box",style="filled",fillcolor="#66CCff"]
+13 [label="上升保持电路",shape="box",style="filled",fillcolor="#66CCff"]
+15 [label="下降保持电路",shape="box",style="filled",fillcolor="#66CCff"]
+17 [label="1楼呼叫判定、呼叫保持",shape="box",style="filled",fillcolor="#66CCff"]
+19 [label="2楼呼叫判断、呼叫保持",shape="box",style="filled",fillcolor="#66CCff"]
+21 [label="3楼呼叫判断、呼叫保持",shape="box",style="filled",fillcolor="#66CCff"]
+23 [label="(可扩展：n楼呼叫判定、呼叫保持)",shape="box",style="filled",fillcolor="#66CCff"]
+}
