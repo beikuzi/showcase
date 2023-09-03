@@ -1,0 +1,3 @@
+使用工具
+	ai音乐：sovits4.1 			来源：bilibili@羽毛布団
+	ai绘画：Stable Diffusion(aki-v4)		来源：bilibili@aaaki

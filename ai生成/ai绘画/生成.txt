@@ -1,0 +1,129 @@
+品质词
+	masterpiece, 	杰作
+	best quality, 	最高画质
+	ultra-detailed, 顶级细节
+	illustration, 	插画
+	dynamic angle,	动态角度
+	an extremely delicate and beautiful girl,
+	1girl, solo,	单人
+
+
+强化前缀
+	beautiful detailed
+景象
+	water		水(效果比sea好
+	sea		海
+	train		火车（可能在里面或外面
+	room		房间
+	butterfly	蝴蝶
+	dandelion	蒲公英（可加white前缀，否则多半黄色
+	sky		天空
+	dawn		黎明
+	tree		树
+	cave		洞穴（ai可能不大理解，只会在四周加石头？
+	field		田野
+	barrier		障碍，栏杆
+	railing		栏杆
+	stone		石头
+	ship		船
+	sail		航行
+	trail		踪迹	
+	petals		花瓣（可加flying前缀
+	wind		凤
+	splashes	光斑
+	window		窗户
+	vase		花瓶
+	painting	画作
+	lamp		灯
+	bed		床
+	book		书（如果有关要素充足，很有可能生成手握笔
+	pen		笔（极大可能手持，然后会把手画爆炸
+	shelf		架子
+	pond		池塘
+	fishing pod	鱼竿（存在手持，手会爆炸
+	
+	
+效果
+	disheveled hair,发型散乱
+	frills,		褶皱
+	close to viewer,靠近视角
+	from above	从上方
+	from below	从下方
+	
+强化前缀
+	beautiful detailed
+	transparent	透明的
+装饰和衣物
+	bandage		绷带
+	chain		锁链（多半在脖子上，wrist也很难限制在手上
+	buttons		纽扣（可加untied
+	clock		披肩（有可能反物理
+	serafuku	日式水手学生服
+	
+	（上面效果明显）
+	skirt		衬衫
+	ribbon		丝带
+	bangs		刘海
+	bowtie		领结
+部位
+	chest
+	wrist		手腕
+	shoulder	肩膀（可加前缀bare，路肩
+	hair		头发（可加颜色
+	
+颜色
+	black
+	golden brown	金棕色
+表情
+	shy		羞涩
+	blush		脸红
+	stare		凝视
+	cry,weep,	哭泣
+
+特殊（这类图炸掉的几率会高很多
+	cum,
+	orgasm,		高潮
+	masturbation,	自卫
+	semen,		白色液体(a small amount of semen:0.6),
+	see-through,	穿透
+	wet,		湿润
+	toilet		厕所
+	bathroom	浴室
+	shower head	花洒
+	shower		淋浴
+	bathtub		浴缸
+	popsicle	冰棍
+反制
+	nsfw		工作不宜
+
+反向提示词
+lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,cropped,worst quality,low quality,jpeg artifacts,signature,watermark,username, blurry,missing arms,blood,large flower,large butterfly,large hat,no clothes,no pants,
+
+
+房间生成
+masterpiece, best quality, ultra-detailed,  illustration,dynamic angle,1girl, solo,an extremely delicate and beautiful girl,
+beautiful detailed room, beautiful detailed eyes,beautiful detailed dawn,beautiful detailed bed,
+black hair,disheveled hair,
+frills,close to viewer,
+untied buttons,
+bare shoulders,
+shy,blush,
+small chest,flat chest,
+chain on wrist,
+vase,painting,lamp,window,doll,computer,book,shelf,
+
+lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, missing arms, long neck, humpbacked, shadow,grey,blood,large flower,large butterfly,large hat,no clothes,
+
+雪地池塘
+masterpiece, best quality, ultra-detailed,  illustration,dynamic angle,1girl, solo,an extremely delicate and beautiful girl,
+beautiful detailed sky, beautiful detailed eyes,beautiful detailed dawn,beautiful detailed camp,beautiful detailed snow,
+black hair,disheveled hair,
+frills,close to viewer,
+untied buttons,
+bare shoulders,
+shy,blush,
+small chest,flat chest,
+chain on wrist,
+tree,stone,railing,
+pond,fish,
+cry,weep,
