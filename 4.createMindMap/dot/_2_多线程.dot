@@ -1,0 +1,60 @@
+digraph g{
+graph [
+	rankdir="LR";
+	bgcolor="#A9CCE3"
+	splines=false;
+];
+node [
+	style = "filled"
+	shape = "record"
+	fillcolor = "white"
+];
+edge [
+	color="red"
+];
+"node0" [
+label = "<f0> 根节点| <f1> 基本功能\l"
+];
+"node1" [
+label = "<f0> 基本功能| <f2> 多线程可以让所有cpu核飙到100%\l| <f3> 头文件#include&nbsp;&lt;thread&gt;\l| <f4> 当使用thread的时候，这个线程就可以被系统调\l度了\l| <f8> 但是如果主程序结束了，那么所有线程都被回\l收，因此需要等待线程完成\l| <f10> 可以使用vector来记录所有的线程\l| <f12> 类中的函数多线程\l| <f17> 同时输出行为\l"
+];
+"node17" [
+label = "<f0> 同时输出行为| <f18> 所有创建子线程、主程序线程有可能一起运行，如果主\l程序、多个线程之间存在同时输出，比如有多个\l| <f19> cout&lt;&lt;&quot;a&quot;&lt;&lt;'\\n'\l| <f20> 可能会发生同时输出a再同时输出\\n，也就是aa\\n\\n\l| <f21> 并且也不会按创建线程的顺序来进行输出\l| <f22> 使用等待功能顺序输出\l"
+];
+"node12" [
+label = "<f0> 类中的函数多线程| <f13> 直接使用thread(struct.func)，会报Error:\l| <f14> 指向绑定函数的指针只能用于调用函数\l| <f15> 可以这样写：\l| <f16> auto&nbsp;call&nbsp;=&nbsp;bind(&class::func,&obj,val1,val2,...);\l举例：\lauto&nbsp;call&nbsp;=&nbsp;bind(&mindMap::txtToPng,&nbsp;&mmp,&nbsp;fileId,&nbsp;fileName);\l&#9;//其中mindMap是类名，txtToPng是它的成员函数\l&#9;//mmp是mindMap创建的对象，后面跟着txtToPng函数需要的变量\lvector&lt;thread&gt;&nbsp;threads;&nbsp;\lthreads.push_back(thread(call));\lfor&nbsp;(auto&nbsp;&thread&nbsp;:&nbsp;threads)&nbsp;&#123;\l&#9;thread.join();\l&#125;\l\l"
+];
+"node10" [
+label = "<f0> 可以使用vector来记录所有的...| <f11> void&nbsp;fun(int&nbsp;n)&#123;cout&lt;&lt;n*2;&#125;\lvector&lt;thread&gt;v;\lwhile(n--)&#123;\l&#9;v.push_back(thread(fun,n));\l&#125;\lfor(int&nbsp;i=0;i&lt;v.size();i++)&#123;\l&#9;v[i].join();\l&#125;\l\l"
+];
+"node8" [
+label = "<f0> 但是如果主程序...| <f9> abc.join();//该线程完成后才会下一\l步\l"
+];
+"node4" [
+label = "<f0> 当使用thread的时候，...| <f5> thread&nbsp;abc=thread(myfun,Value1,Value2,...)\l| <f6> //void&nbsp;myfun(int&nbsp;value1,int&nbsp;value2)&#123;...&#125;\l| <f7> //需要多线程的函数myfun，以及这个函数\l需要的变量……\l"
+];
+"node22" [
+label = "<f0> 使用等待功能顺序输出| <f23> #include&nbsp;&lt;iostream&gt;\l#include&nbsp;&lt;cstdlib&gt;&nbsp;//rand\l#include&nbsp;&lt;thread&gt;&#9;\l#include&nbsp;&lt;cmath&gt;\l#include&nbsp;&lt;vector&gt;\l#include&nbsp;&lt;mutex&gt;&#9;//保护\l#include&nbsp;&lt;condition_variable&gt;&#9;//条件变量\l#include&nbsp;&lt;functional&gt;&nbsp;//bind\l#include&nbsp;&lt;random&gt;&#9;//使用c++11的时间库，使用过去的rand可能引发多线程效果低下\lusing&nbsp;namespace&nbsp;std;\lstruct&nbsp;multiThread&#123;\l&#9;int&nbsp;nowThreadId;//现在可以进行输出的线程id\l&#9;mutex&nbsp;mtx;//互斥锁\l&#9;condition_variable&nbsp;cv;&nbsp;//条件变量\l\l&#9;random_device&nbsp;rd;//\l&#9;int&nbsp;myrand()&#123;\l&#9;&#9;mt19937&nbsp;gen(rd());&nbsp;\l&#9;&#9;uniform_int_distribution&lt;int&gt;&nbsp;distribution(0,&nbsp;65536);\l&#9;&#9;return&nbsp;distribution(gen);\l&#9;&#125;\l&#9;void&nbsp;func(int&nbsp;x)&#123;//按顺序\l&#9;&#9;for(int&nbsp;i=1,temp;i&lt;=3e4;i++)&#123;temp=sqrt(myrand()+i)+1;&#125;//模拟进行大量计算\l&#9;&#9;unique_lock&lt;mutex&gt;&nbsp;lock(mtx);\l&#9;&#9;cv.wait(lock,[x,this]&#123;return&nbsp;x==nowThreadId;&#125;);\l&#9;&#9;//后面是lambda表达式，该部分为true就可以解锁lock\l&#9;&#9;cout&lt;&lt;&quot;输出：&quot;&lt;&lt;x&lt;&lt;'\\n';\l&#9;&#9;++nowThreadId;\l&#9;&#125;\l&#9;void&nbsp;func2(int&nbsp;x)&#123;//不按顺序\l&#9;&#9;for(int&nbsp;i=1,temp;i&lt;=3e4;i++)&#123;temp=sqrt(myrand()+i)+1;&#125;//模拟进行大量计算\l&#9;&#9;cout&lt;&lt;&quot;输出：&quot;&lt;&lt;x&lt;&lt;'\\n';\l&#9;&#125;\l&#125;mt;\lbool&nbsp;multi=1;//1多线程，0单线程\lint&nbsp;main()&nbsp;&#123;\l&#9;//unique_ptr&lt;multiThread&gt;&nbsp;mt&nbsp;=&nbsp;make_unique&lt;multiThread&gt;();\l&#9;vector&lt;thread&gt;threads;\l&#9;if(multi)&#123;\l&#9;&#9;for(int&nbsp;i=0;i&lt;=100;i++)&#123;//将func2切换为func进行顺序输出\l&#9;&#9;&#9;//cout&lt;&lt;mt.myrand()&lt;&lt;'\\n';\l&#9;&#9;&#9;auto&nbsp;call=bind(&multiThread::func2,&mt,i);\l&#9;&#9;&#9;threads.push_back(thread(call));\l&#9;&#9;&#125;\l&#9;&#9;for&nbsp;(auto&nbsp;&thread&nbsp;:&nbsp;threads)&nbsp;&#123;\l&#9;&#9;&#9;thread.join();\l&#9;&#9;&#125;\l&#9;&#125;\l&#9;\l&#9;//单线程\l&#9;else&nbsp;for(int&nbsp;i=0;i&lt;=100;i++)&#123;\l&#9;&#9;mt.func2(i);\l&#9;&#125;\l&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;0;\l&#125;\l\l"
+];
+"node0":f1 -> "node1":f0 [
+id = 6
+];
+"node1":f17 -> "node17":f0 [
+id = 7
+];
+"node1":f12 -> "node12":f0 [
+id = 8
+];
+"node1":f10 -> "node10":f0 [
+id = 9
+];
+"node1":f8 -> "node8":f0 [
+id = 10
+];
+"node1":f4 -> "node4":f0 [
+id = 11
+];
+"node17":f22 -> "node22":f0 [
+id = 19
+];
+}

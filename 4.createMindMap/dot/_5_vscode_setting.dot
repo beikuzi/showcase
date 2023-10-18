@@ -1,0 +1,42 @@
+digraph g{
+graph [
+	rankdir="LR";
+	bgcolor="#A9CCE3"
+	splines=false;
+];
+node [
+	style = "filled"
+	shape = "record"
+	fillcolor = "white"
+];
+edge [
+	color="red"
+];
+"node0" [
+label = "<f0> 根节点| <f1> vscode使用format格式化代码\l"
+];
+"node1" [
+label = "<f0> vscode使用f...| <f2> linux：\l"
+];
+"node2" [
+label = "<f0> linux：| <f3> 在vscode扩展中搜clang-format安装\l| <f4> 最好系统也装一下\l| <f5> sudo&nbsp;apt-get&nbsp;install&nbsp;clang-format\l| <f6> 在setting.json中引入clang设置\l| <f11> 在项目中配置文件.clang-format\l| <f14> 然后按下ctrl+shift+I即可刷新格式\l| <f15> 如果配置没有生效，可以按ctrl+shift+p搜索Format&nbsp;Docum\lent，然后选配置clang-format的有关选项\l"
+];
+"node11" [
+label = "<f0> 在项目中配置文件.clang-format| <f12> 该文件放在.vscode下无效\l| <f13> Language:&nbsp;Cpp\l#&nbsp;设置制表符宽度，使用tab缩进\lUseTab:&nbsp;Always\lTabWidth:&nbsp;4&nbsp;\lIndentWidth:&nbsp;4\l\l#对齐连续的尾随的注释\lAlignTrailingComments:&nbsp;true\l\l#将简单的if语句放到一个单行\lAllowShortIfStatementsOnASingleLine:&nbsp;Always\l\l#每行字符的限制，0表示没有限制\lColumnLimit:&nbsp;0\l\l#函数参数换行\lBinPackParameters:&nbsp;false\l\l"
+];
+"node6" [
+label = "<f0> 在setting.json中引...| <f7> &quot;C_Cpp.formatting&quot;:&nbsp;&quot;clangFormat&quot;,\l| <f8> &quot;C_Cpp.clang_format_fallbackStyle&quot;:&nbsp;&quot;Visual&nbsp;\lStudio&quot;,\l| <f9> &quot;C_Cpp.clang_format_sortIncludes&quot;:&nbsp;true,\l| <f10> &quot;C_Cpp.clang_format_style&quot;:&nbsp;&quot;file&quot;\l"
+];
+"node0":f1 -> "node1":f0 [
+id = 17
+];
+"node1":f2 -> "node2":f0 [
+id = 18
+];
+"node2":f11 -> "node11":f0 [
+id = 20
+];
+"node2":f6 -> "node6":f0 [
+id = 21
+];
+}

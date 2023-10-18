@@ -1,0 +1,17 @@
+Language: Cpp
+# 设置制表符宽度
+UseTab: Always
+TabWidth: 4   
+IndentWidth: 4
+
+#对齐连续的尾随的注释
+AlignTrailingComments: true
+
+#将简单的if语句放到一个单行
+AllowShortIfStatementsOnASingleLine: Always
+
+#每行字符的限制，0表示没有限制
+ColumnLimit: 0
+
+#函数参数换行
+BinPackParameters: false

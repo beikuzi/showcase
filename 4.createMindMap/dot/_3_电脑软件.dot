@@ -1,0 +1,102 @@
+digraph g{
+graph [
+	rankdir="LR";
+	bgcolor="#A9CCE3"
+	splines=false;
+];
+node [
+	style = "filled"
+	shape = "record"
+	fillcolor = "white"
+];
+edge [
+	color="red"
+];
+"node0" [
+label = "<f0> 根节点| <f1> windows\l| <f34> linux\l"
+];
+"node34" [
+label = "<f0> linux| <f35> 根目录/\l| <f42> 主目录~\l"
+];
+"node1" [
+label = "<f0> windows| <f2> 安装盘D:\l| <f27> 文件盘E:\l"
+];
+"node42" [
+label = "<f0> 主目录~| <f43> mc启动文件\l| <f44> matlab(但是simulink卡的无法使用\l)\l| <f45> 快捷启动的shell文件\l"
+];
+"node35" [
+label = "<f0> 根目录/| <f36> qq、微信、腾讯会议、百度云\l| <f37> steam\l| <f38> 网易云音乐\l| <f39> github\l| <f40> typora\l| <f41> vscode\l"
+];
+"node27" [
+label = "<f0> 文件盘E...| <f28> github仓库\l| <f29> 下载\l| <f32> 消息记录\l"
+];
+"node2" [
+label = "<f0> 安装盘D...| <f3> install\l| <f24> env\l"
+];
+"node32" [
+label = "<f0> 消息记录...| <f33> qq、微信\l"
+];
+"node29" [
+label = "<f0> 下载| <f30> 百度云、阿里云、夸克、飞猫盘\l| <f31> 网易云本地音乐\l"
+];
+"node24" [
+label = "<f0> env| <f25> //用于存放需要环境\l| <f26> curl、mingw、Graphviz、json&#9;\l"
+];
+"node3" [
+label = "<f0> install| <f4> tool\l| <f12> play\l| <f16> msg\l| <f19> study\l"
+];
+"node19" [
+label = "<f0> study| <f20> pr、ps、ae\l| <f21> vscode\l| <f22> python、matlab\l| <f23> typora\l"
+];
+"node16" [
+label = "<f0> msg| <f17> qq、微信&nbsp;\l| <f18> 百度云、网易云\l"
+];
+"node12" [
+label = "<f0> play| <f13> ai绘画、ai音乐\l| <f14> steam\l| <f15> MMD\l"
+];
+"node4" [
+label = "<f0> tool| <f5> flash、winrar、搜狗\l| <f6> 鲁大师、360\l| <f7> 腾讯会议\l| <f8> github\l| <f9> uvr\l| <f10> 格式工厂\l| <f11> obs\l"
+];
+"node0":f34 -> "node34":f0 [
+id = 0
+];
+"node0":f1 -> "node1":f0 [
+id = 1
+];
+"node34":f42 -> "node42":f0 [
+id = 2
+];
+"node34":f35 -> "node35":f0 [
+id = 3
+];
+"node1":f27 -> "node27":f0 [
+id = 4
+];
+"node1":f2 -> "node2":f0 [
+id = 5
+];
+"node27":f32 -> "node32":f0 [
+id = 5
+];
+"node27":f29 -> "node29":f0 [
+id = 6
+];
+"node2":f24 -> "node24":f0 [
+id = 9
+];
+"node2":f3 -> "node3":f0 [
+id = 10
+];
+"node3":f19 -> "node19":f0 [
+id = 11
+];
+"node3":f16 -> "node16":f0 [
+id = 12
+];
+"node3":f12 -> "node12":f0 [
+id = 13
+];
+"node3":f4 -> "node4":f0 [
+id = 14
+];
+}

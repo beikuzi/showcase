@@ -1,4 +1,0 @@
-4	linux	github	install	game	open.sh
-4	github	笔记	资料	项目	blog	language		
-4	game	mc	steam				
-4	install	QQ/腾讯会议	微信	vscode+language wine	网易云	百度云	typora	

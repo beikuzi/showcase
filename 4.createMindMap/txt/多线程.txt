@@ -1,0 +1,99 @@
+基本功能
+	多线程可以让所有cpu核飙到100%
+	头文件#include <thread>
+	当使用thread的时候，这个线程就可以被系统调度了
+		thread abc=thread(myfun,Value1,Value2,...)
+		//void myfun(int value1,int value2){...}
+		//需要多线程的函数myfun，以及这个函数需要的变量……
+	但是如果主程序结束了，那么所有线程都被回收，因此需要等待线程完成
+		abc.join();//该线程完成后才会下一步
+	可以使用vector来记录所有的线程
+		```
+void fun(int n){cout<<n*2;}
+vector<thread>v;
+while(n--){
+	v.push_back(thread(fun,n));
+}
+for(int i=0;i<v.size();i++){
+	v[i].join();
+}
+```
+	类中的函数多线程
+		直接使用thread(struct.func)，会报Error:
+		指向绑定函数的指针只能用于调用函数
+		可以这样写：
+		```
+auto call = bind(&class::func,&obj,val1,val2,...);
+举例：
+auto call = bind(&mindMap::txtToPng, &mmp, fileId, fileName);
+	//其中mindMap是类名，txtToPng是它的成员函数
+	//mmp是mindMap创建的对象，后面跟着txtToPng函数需要的变量
+vector<thread> threads; 
+threads.push_back(thread(call));
+for (auto &thread : threads) {
+	thread.join();
+}
+```
+	同时输出行为
+		所有创建子线程、主程序线程有可能一起运行，如果主程序、多个线程之间存在同时输出，比如有多个
+		cout<<"a"<<'\n'
+		可能会发生同时输出a再同时输出\n，也就是aa\n\n
+		并且也不会按创建线程的顺序来进行输出
+		使用等待功能顺序输出
+			```
+#include <iostream>
+#include <cstdlib> //rand
+#include <thread>	
+#include <cmath>
+#include <vector>
+#include <mutex>	//保护
+#include <condition_variable>	//条件变量
+#include <functional> //bind
+#include <random>	//使用c++11的时间库，使用过去的rand可能引发多线程效果低下
+using namespace std;
+struct multiThread{
+	int nowThreadId;//现在可以进行输出的线程id
+	mutex mtx;//互斥锁
+	condition_variable cv; //条件变量
+
+	random_device rd;//
+	int myrand(){
+		mt19937 gen(rd()); 
+		uniform_int_distribution<int> distribution(0, 65536);
+		return distribution(gen);
+	}
+	void func(int x){//按顺序
+		for(int i=1,temp;i<=3e4;i++){temp=sqrt(myrand()+i)+1;}//模拟进行大量计算
+		unique_lock<mutex> lock(mtx);
+		cv.wait(lock,[x,this]{return x==nowThreadId;});
+		//后面是lambda表达式，该部分为true就可以解锁lock
+		cout<<"输出："<<x<<'\n';
+		++nowThreadId;
+	}
+	void func2(int x){//不按顺序
+		for(int i=1,temp;i<=3e4;i++){temp=sqrt(myrand()+i)+1;}//模拟进行大量计算
+		cout<<"输出："<<x<<'\n';
+	}
+}mt;
+bool multi=1;//1多线程，0单线程
+int main() {
+	//unique_ptr<multiThread> mt = make_unique<multiThread>();
+	vector<thread>threads;
+	if(multi){
+		for(int i=0;i<=100;i++){//将func2切换为func进行顺序输出
+			//cout<<mt.myrand()<<'\n';
+			auto call=bind(&multiThread::func2,&mt,i);
+			threads.push_back(thread(call));
+		}
+		for (auto &thread : threads) {
+			thread.join();
+		}
+	}
+	
+	//单线程
+	else for(int i=0;i<=100;i++){
+		mt.func2(i);
+	}
+    return 0;
+}
+```

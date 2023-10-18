@@ -1,0 +1,46 @@
+windows
+	安装盘D:
+		install
+			tool
+				flash、winrar、搜狗
+				鲁大师、360
+				腾讯会议
+				github
+				uvr
+				格式工厂
+				obs
+			play
+				ai绘画、ai音乐
+				steam
+				MMD
+				
+			msg
+				qq、微信 
+				百度云、网易云
+			study
+				pr、ps、ae
+				vscode
+				python、matlab
+				typora
+		env
+			//用于存放需要环境
+			curl、mingw、Graphviz、json	
+	文件盘E:
+		github仓库
+		下载
+			百度云、阿里云、夸克、飞猫盘
+			网易云本地音乐
+		消息记录
+			qq、微信
+linux
+	根目录/
+		qq、微信、腾讯会议、百度云
+		steam
+		网易云音乐
+		github
+		typora
+		vscode
+	主目录~
+		mc启动文件
+		matlab(但是simulink卡的无法使用)
+		快捷启动的shell文件

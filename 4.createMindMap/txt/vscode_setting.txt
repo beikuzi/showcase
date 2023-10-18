@@ -1,0 +1,36 @@
+vscode使用format格式化代码
+	linux：
+		在vscode扩展中搜clang-format安装
+		最好系统也装一下
+		sudo apt-get install clang-format
+		在setting.json中引入clang设置
+			"C_Cpp.formatting": "clangFormat",
+			"C_Cpp.clang_format_fallbackStyle": "Visual Studio",
+			"C_Cpp.clang_format_sortIncludes": true,
+			"C_Cpp.clang_format_style": "file"
+		在项目中配置文件.clang-format
+			该文件放在.vscode下无效
+			```
+Language: Cpp
+# 设置制表符宽度，使用tab缩进
+UseTab: Always
+TabWidth: 4 
+IndentWidth: 4
+
+#对齐连续的尾随的注释
+AlignTrailingComments: true
+
+#将简单的if语句放到一个单行
+AllowShortIfStatementsOnASingleLine: Always
+
+#每行字符的限制，0表示没有限制
+ColumnLimit: 0
+
+#函数参数换行
+BinPackParameters: false
+```
+		然后按下ctrl+shift+I即可刷新格式
+		如果配置没有生效，可以按ctrl+shift+p搜索Format Document，然后选配置clang-format的有关选项
+		
+
+
