@@ -42,7 +42,7 @@ getAction(myAgent,{rand(obsInfo.Dimension)});
 %设置训练参数
 trainOpts = rlTrainingOptions;
 trainOpts.MaxStepsPerEpisode = 400;
-trainOpts.MaxEpisodes= 50;
+trainOpts.MaxEpisodes= 100;
 
 learning=true;
 if learning
